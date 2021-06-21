@@ -1,0 +1,4 @@
+sqlplus -l -s smodi/SRXOQIwMjbCzr2GAiTj8#@GIT56PD_LOV2_01 <<!
+@/home/oracle/shivdeep/temp_work/sm.sql
+@$1
+!

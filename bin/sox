@@ -1,0 +1,81 @@
+#!/bin/ksh
+PRODUCT=$1
+> /home/oracle/shivdeep/temp_work/${PRODUCT}.html
+for ii in `get $1|egrep 'PD|prod'`
+do
+dbrole=`sqls $ii <<!
+set lines 300 pages 0 trimspool on feedback off timing off
+select replace(database_role,' ','_') from v\\$database;
+!
+`
+dbrole=`echo $dbrole|awk '{print$1}'`
+
+# Sox and GAP
+if [[ $dbrole == 'PRIMARY' ]];then
+sqls $ii <<!|grep -v Elap
+set lines 300 timing off
+spool /home/oracle/shivdeep/temp_work/${PRODUCT}.html append
+@$SPATH/soc2.sql
+prompt
+prompt Physical Standby GAP
+
+col archive_dest for a50
+col error for a60
+SELECT INST_ID,DEST_ID, STATUS DB_STATUS,DESTINATION ARCHIVE_DEST,ERROR ERROR
+  FROM GV\$ARCHIVE_DEST
+ WHERE destination is not null
+   and dest_id <> 1;
+
+
+col dest_name for a20
+col status for a20
+col destination for a20
+col gap_status for a40
+select inst_id,dest_name, status, destination, gap_status from gv\$archive_dest_status where type = 'PHYSICAL';
+
+prompt
+prompt RMAN Backups
+prompt
+col status for a30
+select start_time,end_time,round(input_bytes/1048576/1024,2) input_files_gb,
+round(output_bytes/1048576/1024,2) output_pieces_gb,status,INPUT_TYPE,ELAPSED_SECONDS
+from V\$RMAN_BACKUP_JOB_DETAILS
+where trunc(start_time) > trunc(sysdate-30)
+order by 1
+/
+
+spool off
+!
+else
+:
+#echo $ii:$dbrole:SKIPPING
+fi
+done
+echo " "
+echo Diskgroup INFO
+echo " "
+
+echo 'DB_NAME             |DISKGROUP                     |  TOTAL_GB|   FREE_GB|  PCT_FREE|  PCT_USED'
+echo '--------------------|------------------------------|----------|----------|----------|----------'
+
+for ii in `get $1`
+do
+sqad $ii|grep $ii|grep DATA
+done
+
+export MAILDBA="shivdeep.modi@ihsmarkit.com"
+export THIS_SUBJECT="${PRODUCT} Product Report"
+function sendthemail
+    {
+        {
+        echo "From: ORA-Checks@ihsmarkit.com"
+        echo "To: ${MAILDBA}"
+        echo "Subject: ${THIS_SUBJECT}"
+        echo "MIME-Version: 1.0"
+        echo "Content-Type: text/plain"
+        echo "Content-Disposition: inline"
+        cat /home/oracle/shivdeep/temp_work/${PRODUCT}.html
+        } | /usr/sbin/sendmail ${MAILDBA}
+    }
+
+#sendthemail

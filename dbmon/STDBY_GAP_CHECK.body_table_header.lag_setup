@@ -1,0 +1,13 @@
+<table border=1 width=100%>
+<tr>
+<td>DB_NAME      </td>
+<td>DATABASE_ROLE      </td>
+<td>HOST_NAME      </td>
+<td>NAME      </td>
+<td>LAG         </td>
+<td>DAYS         </td>
+<td>HOURS</td>
+<td>MINS</td>
+<td>SECONDS</td>
+<td>TIME_COMPUTED</td>
+</tr>

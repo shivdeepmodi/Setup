@@ -1,0 +1,35 @@
+cat sql_id
+60vz3muhs17dd
+6wup727w28xmn
+7sjn92n5s2zpr
+9cqtccx4rj9hw
+fs3533cpqbw3z
+
+
+for ii in `cat asd`
+do
+echo $ii
+grep -f sql_id $ii
+done
+
+for ii in `cat asd`; 
+do 
+sed -n '/----- Current SQL Statement for this session (sql_id=/,/END/p' $ii; > 
+done
+
+#Find the files with sql_id and print the sql from files. This will overwrite the files if sql_id is in multiple files
+
+for ii in `cat sql_id`
+do
+for jj in `cat asd`
+do
+grep "\-\-\-\-\- Current SQL Statement for this session.*sql_id=$ii" $jj > /dev/null
+if [[ $? -eq 0 ]];then
+echo $ii: $jj
+sed -n "/${ii}/,/END/{p;/END/q}" $jj > ${ii}.sql
+fi
+done
+done
+
+
+sed -n '/60vz3muhs17dd/,/END/{p;/END/q}' /u01/app/oracle/diag/rdbms/kycpd_lon6/KYCPD/incident/incdir_208178/KYCPD_ora_14329_i208178.trc > 60vz3muhs17dd.sql

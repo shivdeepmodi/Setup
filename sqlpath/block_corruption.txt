@@ -1,0 +1,12 @@
+SQL> SELECT * FROM V$DATABASE_BLOCK_CORRUPTION;
+
+     FILE#     BLOCK#     BLOCKS CORRUPTION_CHANGE# CORRUPTIO
+---------- ---------- ---------- ------------------ ---------
+        64    2780626          1                  0 FRACTURED
+
+SQL> SELECT   tablespace_name,   segment_type,  owner,   segment_name FROM dba_extents WHERE file_id = 64   AND 2780626 BETWEEN block_id AND block_id + blocks - 1;
+
+
+TABLESPACE_NAME                SEGMENT_TYPE       OWNER                          SEGMENT_NAME
+------------------------------ ------------------ ------------------------------ ---------------------------------------------------------------------------------
+CITI_DATA                      INDEX              DATACITI_CITI                  FIELD_0000000A_0000089E_P

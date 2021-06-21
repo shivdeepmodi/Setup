@@ -1,0 +1,2 @@
+select inst_id,username,status,count(*) from gV$session where username is not null and username not in ('SYS','SYSRAC','PUBLIC' ) and status <> 'KILLED' group by inst_id,username,status 
+/

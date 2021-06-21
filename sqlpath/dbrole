@@ -1,0 +1,32 @@
+##Quick check to find database role for all dbs on hosts
+#
+#for ii in $(ps -ef|grep pmon|egrep -v 'ASM|MGM|grep|APX'|cut -d '_' -f3)
+ORAENV_ASK=NO
+ORACLE_SID=`ps -ef|grep pmon|grep ASM|cut -d "_" -f3`
+. oraenv
+for ii in $(ps -ef|grep pmon|egrep -v 'ASM|MGM|grep|APX'|cut -c58-80)
+do
+ORAENV_ASK=NO
+export ORACLE_SID=$ii
+. oraenv >/dev/null
+db_unique_name=`sqlplus -s / as sysdba <<!
+set head off trimspool on feedback off timing off
+select value from v\\$parameter where name = 'db_unique_name';
+!
+`
+#echo $ii : `srvctl status database -d $db_unique_name` "|" `srvctl config database -d $db_unique_name|grep Configured`
+dbrole=`sqlplus -s / as sysdba <<!
+set lines 300 pages 0 trimspool on feedback off timing off
+select replace(database_role,' ','_') from v\\$database;
+!
+`
+ver=`sqlplus -s / as sysdba <<!
+set lines 300 pages 0 trimspool on feedback off timing off
+select banner from v\\$version where rownum=1;
+!
+`
+echo $ii : $db_unique_name: $dbrole: $ver | awk -F ":" '{printf "%-12s \t: %-12s \t: %-20s \t: %-30s\n",$1,$2,$3,$4}'
+ORAENV_ASK=YES
+done|sort -k 1
+ORAENV_ASK=YES
+##Quick check to find database role for all dbs on hosts

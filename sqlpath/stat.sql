@@ -1,0 +1,1 @@
+select host_name,instance_name,startup_time,status, database_role,open_mode from gv$database d, gv$instance i where i.inst_id=d.inst_id;

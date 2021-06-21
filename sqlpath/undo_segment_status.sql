@@ -1,0 +1,1 @@
+select tablespace_name, status, sum(blocks) * 8192/1024/1024/1024 GB from dba_undo_extents group by tablespace_name, status;

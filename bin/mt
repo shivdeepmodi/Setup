@@ -1,0 +1,44 @@
+#!/bin/ksh
+#tempfile in temp_work dir
+#suffix option does not work
+
+function print_format
+{
+
+echo "DB_NAME 	DATABASE_ROLE 	HOST_NAME 	TABLE_SPACE 	BIGFILE 	TOTAL_GB	USED_GB 	FREE_GB	PCT_USED" |\
+              awk '{printf "%-20s %-13s %-20s %-25s %-7s %8s %8s %8s %8s\n",$1,$2,$3,$4,$5,$6,$7,$8,$9}' 
+echo "=================== 	============= 	========= 	=========== 	======= 	========	======= 	=======	========" |\
+              awk '{printf "%-20s %-13s %-20s %-25s %-7s %8s %8s %8s %8s\n",$1,$2,$3,$4,$5,$6,$7,$8,$9}' 
+echo $@|awk '{printf "%-20s %-13s %-20s %-25s %-7s %8s %8s %8s %8s\n",$2,$3,$4,$5,$6,$7,$8,$9,$10}'
+
+}
+export mt_tempfile=`mktemp -p /home/oracle/shivdeep/temp_work`
+if [[ $? -ne 0 ]];then
+ echo Unable to generate the tempfile
+else
+
+sed '/^$/d' $1 > $mt_tempfile
+perl -p -i -e 's!^!t !g' $mt_tempfile
+#mv $mt_tempfile $1
+#echo "# DB_NAME 	DATABASE_ROLE 	HOST_NAME 	TABLE_SPACE 	BIGFILE 	TOTAL_GB	USED_GB 	FREE_GB	PCT_USED" |\
+#              awk '{printf "%s %-20s %-13s %-20s %-25s %-7s %8s %8s %8s %8s\n",$1,$2,$3,$4,$5,$6,$7,$8,$9,$10}' 
+#echo "= =================== 	============= 	========= 	=========== 	======= 	========	======= 	=======	========" |\
+#              awk '{printf "%s %-20s %-13s %-20s %-25s %-7s %8s %8s %8s %8s\n",$1,$2,$3,$4,$5,$6,$7,$8,$9,$10}' 
+#cat $mt_tempfile|awk '{printf "%s %-20s %-13s %-20s %-25s %-7s %8s %8s %8s %8s\n",$1,$2,$3,$4,$5,$6,$7,$8,$9,$10}'
+
+#cat 1|print_format
+
+
+#. $mt_tempfile
+lines_mt_tempfile=`wc -l $mt_tempfile|awk '{print$1}'`
+echo " "
+echo Processing each DB Now...
+echo " "
+for ii in `seq 1 1 $lines_mt_tempfile`
+do
+ print_format `sed -n "${ii},${ii}p" $mt_tempfile`
+ . `sed -n "${ii},${ii}p" $mt_tempfile`
+ echo " "
+done
+fi
+rm $mt_tempfile

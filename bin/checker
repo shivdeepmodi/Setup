@@ -1,0 +1,7 @@
+#!/bin/ksh
+echo -n "Enter the hostname: " 
+read host
+echo -n "Enter the service : " 
+read ser
+
+echo $ser :- `sqlplus -l p/password@$host:1521/$ser |grep ORA-`

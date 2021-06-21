@@ -1,0 +1,7 @@
+while true
+do
+echo -n "sql : "
+read thisdb
+echo DB is : $thisdb
+sq $thisdb
+done

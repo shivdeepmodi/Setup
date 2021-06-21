@@ -1,0 +1,6 @@
+#!/bin/ksh
+unset SQLPATH
+unset ORACLE_PATH
+cd /home/oracle/shivdeep/sql
+
+sm1 tsm.sql

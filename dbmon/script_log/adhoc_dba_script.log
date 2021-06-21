@@ -1,0 +1,2677 @@
+BEGIN Script on : Tue Jun 15 09:54:13 BST 2021
+Script will be spawned: 5 times
+Running Daily check 1 of 5 ..
+Running Daily check 2 of 5 ..
+Running Daily check 3 of 5 ..
+Running Daily check 4 of 5 ..
+Running Daily check 5 of 5 ..
+Create user on	SSD
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'SSD'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+SSD	  USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+Create user on	EJC01PD_AMS5_02
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'EJC01PD_AMS5_02'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+EJC01PD
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+Create user on	NWS01DV
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'NWS01DV'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+NEWSDEV
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+Create user on	NWS01PD_AMS5
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+Create user on	KYC02DV_NJ4
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'NWS01PD_AMS5'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+NEWSPROD
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+NWS01PD_LON6_01: Database is Physical standby
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'KYC02DV_NJ4'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+KYC02DV
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+Create user on	ANA01PD_NJ4_02
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'ANA01PD_NJ4_02'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+ANA01PD
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+Create user on	STF01DV_NJ4
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'STF01DV_NJ4'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+STF01DV
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+Create user on	NWS01QA_AMS5
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'NWS01QA_AMS5'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+NEWSQA
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+Create user on	BDV
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+Create user on	PDV
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'BDV'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+BDV	  USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+STF01PD_NJ4_01: Database is Physical standby
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'PDV'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+PDV	  USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+EJC01PD_LON6_02     :Connection:TIMEOUT 5 seconds: DB not  accesible/responding 5
+Create user on	BJD
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'BJD'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+BJD	  USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+Create user on	EJC01QA_LNP6_01
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+Create user on	PRC01QA_LNP6_01
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'PRC01QA_LNP6_01'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+PRC01QA
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'EJC01QA_LNP6_01'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+EJC01QA
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+Create user on	BMM01DV_LNP6_01
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'BMM01DV_LNP6_01'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+BMM01DV
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+Create user on	EJC02DV_LNP6_01
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'EJC02DV_LNP6_01'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+EJC02DV
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+Create user on	PVL01DV_LNP6_01
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+Create user on	KYC02QA_NJ4_01
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+EQT01LS_LNP6_01: Database is Physical standby
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'PVL01DV_LNP6_01'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+PVL01DV
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+PVL01LS_LNP6_01: Database is Physical standby
+Create user on	STF01PD_RIC1_01
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+BMM01LS_LNP6_01: Database is Physical standby
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'STF01PD_RIC1_01'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+USSFPRD
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+BMM01PD_AMS5_01: Database is Physical standby
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'KYC02QA_NJ4_01'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+EQT01PD_AMS5_01: Database is Physical standby
+PVL01PD_AMS5_01: Database is Physical standby
+
+KYC02QA
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+PVL01PD_LON2_01: Database is Physical standby
+Create user on	STF01QA_NJ4_01
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+Create user on	EQT01PD_LON6_01
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'EQT01PD_LON6_01'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+EQT01PD
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'STF01QA_NJ4_01'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+STF01QA
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+STF02LS_NJ4_01: Database is Physical standby
+Create user on	PVL01PD_LON6_01
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'PVL01PD_LON6_01'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+PVLPD
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+KYCPD_NJ4: Database is Physical standby
+Create user on	PVL01QA_LNP6_01
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'PVL01QA_LNP6_01'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+PVL01QA
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+BMM01PD_LON6        :Connection:TIMEOUT 5 seconds: DB not  accesible/responding 5
+Create user on	TDL01DV_NJ4_01
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+alter user PPANDEY profile ADMIN_USER
+*
+ERROR at line 1:
+ORA-02380: profile ADMIN_USER does not exist
+
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'TDL01DV_NJ4_01'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+Create user on	PVL01UT_LNP6_01
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+TDL01DV
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'PVL01UT_LNP6_01'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+Create user on	BMM01QA_LNP6_01
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+PVL01UT
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+EQT01QA_LNP6_01     :Connection:TIMEOUT 5 seconds: DB not  accesible/responding 5
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'BMM01QA_LNP6_01'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+BMM01QA
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+Create user on	FVL01DV_LNP6_01
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'FVL01DV_LNP6_01'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+FVL01DV
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+TDL01PD_AMS5_01: Database is Physical standby
+Create user on	BVM01DV_LNP6_01
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'BVM01DV_LNP6_01'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+BVM01DV
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+Create user on	PVL02QA_LNP6_01
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+TDL01PD_LON6_01: Database is Physical standby
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'PVL02QA_LNP6_01'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+PVL02QA
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+Create user on	KYCQA
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+FVL01LS_LNP6_01: Database is Physical standby
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+BVM01LS_LNP6_01: Database is Physical standby
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'KYCQA'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+KYCQA
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+Create user on	PWS01PD_LON6_01
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'PWS01PD_LON6_01'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+PWS01PD
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+Create user on	kycut
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+Create user on	BVM01PD_LON2_01
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'kycut'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+KYCUT
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'BVM01PD_LON2_01'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+EVBPROD
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+Create user on	TDL01PD_NJ4_01
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'TDL01PD_NJ4_01'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+Create user on	PWS02PD_AMS5_01
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+TDLPD
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+Create user on	FVL01PD_NJ4_01
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'PWS02PD_AMS5_01'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+PWS02PD
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+BVM01PD_LON6_01: Database is Physical standby
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'FVL01PD_NJ4_01'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+FVL01PD
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+LNS01LS: Database is Physical standby
+TDL01PD_RIC1_01: Database is Physical standby
+FVL01PD_RIC1_01: Database is Physical standby
+Create user on	BVM01QA_LNP6_01
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'BVM01QA_LNP6_01'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+BVM01QA
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+TDL01QA_LNP6_01: Database is Physical standby
+LNS01PD_NJ4_01: Database is Physical standby
+Create user on	BVM01QA_LON2_01
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'BVM01QA_LON2_01'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+BVM01QA
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+Create user on	FVL01QA_LNP6_01
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'FVL01QA_LNP6_01'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+FVL01QA
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+Create user on	QTS01DV_NJ4
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'QTS01DV_NJ4'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+PRODQUOT
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+bvmls: Database is Physical standby
+Create user on	GDV
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+QTS01LS: Database is Physical standby
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'GDV'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+GDV	  USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+Create user on	TDL01QA_NJ4_01
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'TDL01QA_NJ4_01'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+Create user on	LNS01PD_RIC1_01
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+TDLQA
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+GIT12PD_FRV2_01: Database is Physical standby
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'LNS01PD_RIC1_01'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+Create user on	TTM01DV_LNP6_01
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'TTM01DV_LNP6_01'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+TTM01DV
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+
+LOANSPRO
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+Create user on	GIT12PD_LOV2_01
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'GIT12PD_LOV2_01'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+GIT12PD
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+CLR01LS_NJ4_01: Database is Physical standby
+TTM01LS_LNP6_01: Database is Physical standby
+GIT23PD_FRV2_01: Database is Physical standby
+Create user on	QTS01PD_NJ4_01
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+Create user on	LNS02DV_NJ4
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+GIT45PD_FRV2_01: Database is Physical standby
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'QTS01PD_NJ4_01'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'LNS02DV_NJ4'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+PRODQUOT
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+TTM01PD_AMS5_01: Database is Physical standby
+
+LNS02DV
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+Create user on	GIT56PD_LOV2_01
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'GIT56PD_LOV2_01'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+QTS01PD_RIC1_01: Database is Physical standby
+
+RHNSATPD
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+CLR01PD_NJ4_01: Database is Physical standby
+Create user on	TTM01PD_LON6_01
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'TTM01PD_LON6_01'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+TOTEMPRD
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+Create user on	TTM01QA_LNP6_01
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'TTM01QA_LNP6_01'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+TTM01QA
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+Create user on	GIT61PD_LOV2_01
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'GIT61PD_LOV2_01'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+OEMPD
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+Create user on	LNS03QA_NJ4_01
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'LNS03QA_NJ4_01'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+LNS03QA
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+Create user on	HST01DV
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'HST01DV'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+MFE
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+Create user on	TTM01UT_LNP6_01
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'TTM01UT_LNP6_01'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+TTM01UT
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+Create user on	QTS02QA_NJ4_01
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'QTS02QA_NJ4_01'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+QTS02QA
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+Create user on	HST01PD_AMS5
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+rcatdr: Database is Physical standby
+Create user on	CLR01PD_RIC1_01
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'HST01PD_AMS5'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+MFE
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+Create user on	UXS01PD_AMS5
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'CLR01PD_RIC1_01'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+alter user PPANDEY profile ADMIN_USER
+*
+ERROR at line 1:
+ORA-02380: profile ADMIN_USER does not exist
+
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'UXS01PD_AMS5'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+UXS
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+
+CLEARPRD
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+Create user on	MAP01DV
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'MAP01DV'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+HST01PD_LON6_01: Database is Physical standby
+
+MAPDEV
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+Create user on	rcatpd
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'rcatpd'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+RCATPD
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+Create user on	UXS02PD_LON6_01
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+alter user PPANDEY profile ADMIN_USER
+*
+ERROR at line 1:
+ORA-02380: profile ADMIN_USER does not exist
+
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'UXS02PD_LON6_01'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+UXSLONPD
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+Create user on	RDV
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'RDV'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+RDV	  USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+Create user on	CLR01QA_NJ4_01
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+Create user on	HST01QA_AMS5
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+MAP01PD_NJ4_01: Database is Physical standby
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'CLR01QA_NJ4_01'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'HST01QA_AMS5'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+MFE
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+
+CLR01QA
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+Create user on	HST01QA
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+                             *
+ERROR at line 1:
+ORA-01920: user name 'PPANDEY' conflicts with another user or role name
+
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'HST01QA'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+MFE
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+Create user on	REF01DV
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'REF01DV'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+REFDEV
+USER_STATUS FOUND :PPANDEY Created on:
+2021-06-15 08:54:55
+
+
+1 row selected.
+
+Create user on	CLR01UT_NJ4_01
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+Create user on	INF01QA_LNP6_01
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'INF01QA_LNP6_01'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+INF01QA   USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'CLR01UT_NJ4_01'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+CLEARSIM
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+DCH01LS_LNP6_01: Database is Physical standby
+Create user on	REF01PD_AMS5_01
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'REF01PD_AMS5_01'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+REFPROD
+USER_STATUS FOUND :PPANDEY Created on:
+2021-06-15 08:54:56
+
+
+1 row selected.
+
+INFRADR: Database is Physical standby
+REF01PD_LON6_01: Database is Physical standby
+UXSLNPD             :Connection:TIMEOUT 5 seconds: DB not  accesible/responding 5
+Create user on	MAP01PD_RIC1_01
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'MAP01PD_RIC1_01'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+Create user on	infrapd
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+MAPPROD   USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'infrapd'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+INFRAPD   USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+DCH01LS_NJ4_01: Database is Physical standby
+Create user on	REF01QA_AMS5
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'REF01QA_AMS5'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+REFQA
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+MAP01UT_NJ4_01~3    :FAILURE:ORA-01017: invalid username/password; logon denied                                                                      
+Create user on	ITESLON2
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'ITESLON2'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+ITESPROD  USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+RHNSATDR: Database is Physical standby
+ITESLON6: Database is Physical standby
+RHNSATPD: Database is Physical standby
+UXSLONPD_LON6       :Connection:TIMEOUT 5 seconds: DB not  accesible/responding 5
+Create user on	MAP02QA_NJ4_01
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'MAP02QA_NJ4_01'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+Create user on	DCH01PD_NJ4_01
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+MAP02QA
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+Create user on	MCA67PD_LOV2_01
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+Create user on	WHS01DV_LNP6_01
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'WHS01DV_LNP6_01'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'MCA67PD_LOV2_01'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'DCH01PD_NJ4_01'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+WHS01DV
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+
+MCAPD
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+
+DCH01PD
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+DCH01PD_RIC1_01: Database is Physical standby
+WHS01LS_LNP6_01: Database is Physical standby
+Create user on	WHS01PD_LON2_01
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'WHS01PD_LON2_01'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+PROD
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+WHS01PD_LON6_01: Database is Physical standby
+Create user on	DCH01QA_NJ4_01
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'DCH01QA_NJ4_01'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+DCH01QA
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+MCA81PD_FRV2_01     :Connection:TIMEOUT 5 seconds: DB not  accesible/responding 5
+Create user on	WHS01QA_LNP6_01
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'WHS01QA_LNP6_01'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+WHS01QA
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+Create user on	WHS01UT_LNP6_01
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'WHS01UT_LNP6_01'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+WHS01UT
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+Create user on	MIM01PD_AMS5
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'MIM01PD_AMS5'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+DEV01EJC_LNP6_01    :Connection:TIMEOUT 5 seconds: DB not  accesible/responding 5
+
+MIM01PD
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+MIM01PD_LON6: Database is Physical standby
+Create user on	EDS
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'EDS'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+EDS	  USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+Create user on	EDV
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+MIM02PD_AMS5_01: Database is Physical standby
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'EDV'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+EDV	  USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+Create user on	EJC01DV_LNP6_01
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'EJC01DV_LNP6_01'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+EJC01DV
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+Create user on	MIM02PD_LON6_01
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'MIM02PD_LON6_01'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+MIM02PD
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+EJC01LS_LNP6_01: Database is Physical standby
+Create user on	MRD19PD_LOV2_01
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'MRD19PD_LOV2_01'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+BRDPROD
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+Create user on	MRD59QA_LOV1_01
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'MRD59QA_LOV1_01'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+MRD59QA
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+MRD76PD_FRV2_01: Database is Physical standby
+Create user on	MSA01DV_LNP6_01
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'MSA01DV_LNP6_01'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+MSA01DV
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+MSA01LS_LNP6_01: Database is Physical standby
+Create user on	MSA01PD_AMS5_01
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'MSA01PD_AMS5_01'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+MSAPROD
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+
+MSA01PD_LON6_01: Database is Physical standby
+END Running  report end on : Tue Jun 15 09:55:27 BST 2021
+Removing lock file
+Create user on	MSA01QA_LNP6_01
+
+old   1: create user /* &&comment */ &&theuser identified by NdUUPnZcWJEeA7ajAWt1#
+new   1: create user /* CHG0205510 */ PPANDEY identified by NdUUPnZcWJEeA7ajAWt1#
+
+User created.
+
+old   1: grant dba to &&theuser
+new   1: grant dba to PPANDEY
+
+Grant succeeded.
+
+old   1: alter user &&theuser profile ADMIN_USER
+new   1: alter user PPANDEY profile ADMIN_USER
+
+User altered.
+
+old   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'&&_connect_identifier'||':'||'&&theuser','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+new   1: select d.name,decode(u.username,NULL,'USER_STATUS NOT_FOUND :'||'MSA01QA_LNP6_01'||':'||'PPANDEY','USER_STATUS FOUND :'||u.username||' Created on: ') user_status ,u.created
+old   4: (select 1 X,username,created from DBA_users where username = '&&theuser' ) u
+new   4: (select 1 X,username,created from DBA_users where username = 'PPANDEY' ) u
+
+MSA01QA
+USER_STATUS FOUND :PPANDEY Created on:
+15-JUN-21
+
+
+1 row selected.
+

@@ -1,0 +1,25 @@
+# $1 is db_name
+# $2 is the check. Not used
+
+export run_file=$3
+export log_file=$4
+# usr and password are passed here by the invoker
+unset SQLPATH
+unset ORACLE_PATH
+#echo usr: $usr
+#echo password: $password
+> $log_file
+if [[ ${usr} = 'sys' ]];
+then
+sqlplus -s -l ${usr}/${password}@$1 as sysdba <<! |tee -a $log_file
+set heading off feedback on 
+--select name from v\$database;
+@$run_file off $log_file
+!
+else
+sqlplus -s -l ${usr}/${password}@$1  <<! |tee -a $log_file
+set heading off feedback on
+--select name from v\$database;
+@$run_file
+!
+fi

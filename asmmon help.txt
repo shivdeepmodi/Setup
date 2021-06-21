@@ -1,0 +1,110 @@
+col target_name for a40
+col DISKGROUP for a20
+col value for a20
+col free_mb for a10
+col pct_used for 999.99
+col total_mb for a20
+col used_mb for a10
+col usable_total_mb for a10
+col TARGET_TYPE for a20
+
+select target_name,target_type,host_name,diskgroup,max(trunc(cast (COLLECTION_TIMESTAMP as date))) collection_date,
+max(decode(metric_column,'free_mb',value)) free_mb,
+max(round(decode(metric_column,'percent_used',value),2)) pct_used,
+max(decode(metric_column,'total_mb',value)) total_mb,
+max(decode(metric_column,'usable_file_mb',value)) used_mb,
+max(decode(metric_column,'usable_total_mb',value)) usable_total_mb
+from
+(
+SELECT 
+mc.target_name,
+mc.target_type,
+tar.host_name,
+mc.key_value diskgroup,
+mc.VALUE,
+--,mc.metric_name,
+mc.collection_timestamp,
+mc.metric_column
+--,ROW_NUMBER () OVER (PARTITION BY mc.target_name, mc.key_value ORDER BY mc.metric_column)   AS seq
+FROM sysman.MGMT$METRIC_CURRENT mc , sysman.MGMT$TARGET tar
+where (mc.metric_column IN ('free_mb','usable_file_mb','usable_total_mb','percent_used','diskCnt','total_mb') )
+and mc.target_name = tar.target_name
+and mc.TARGET_GUID = tar.TARGET_GUID
+and mc.TARGET_TYPE = tar.TARGET_TYPE
+and mc.target_type in ('osm_instance','osm_cluster')
+--mc.target_name in ('+ASM_viv2crs055','+ASM1_viv2p1wvworc948.info.corp','+ASM2_viv2p1wvworc949.info.corp')
+--where mc.target_name = '+ASM_lon2whsqaorc005.markit.partners'
+--and mc.key_value like 'BMM01PD%'
+and (tar.host_name like 'ams5odcpdorc002%' or tar.host_name like 'lon2whsqaorc005%')
+)
+group by target_name,target_type,host_name,diskgroup,trunc(cast (COLLECTION_TIMESTAMP as date))
+order by host_name;
+
+
+# 20.5.19 How do I view a list of all clustered targets in the repository?
+
+SELECT target_name, target_type,property_name,property_value
+FROM   mgmt$target_type_properties
+WHERE  property_name  = 'is_cluster'
+  AND  property_value = 1;
+
+col PROPERTY_NAME for a30
+col PROPERTY_VALUE for a20
+SELECT prop.target_name, prop.target_type, prop.property_name, prop.property_value
+FROM   mgmt$target_type_properties prop
+WHERE    (prop.target_name like 'lon9odcpdorc004%' or prop.target_name like 'lon2whsqaorc005%' )
+ and prop.target_type = 'host' 
+ and prop.property_name = 'TargetVersion'
+order by prop.target_name;
+
+#
+col PROPERTY_NAME for a30
+col PROPERTY_VALUE for a20
+SELECT prop.target_name, prop.target_type, prop.property_name, prop.property_value
+FROM   mgmt$target_type_properties prop, mgmt$target tar
+WHERE   prop.target_name = tar.target_name
+and tar.target_type = prop.target_type
+and (prop.target_name like 'lon9odcpdorc004%' or prop.target_name like 'lon2whsqaorc005%' )
+ and prop.target_type = 'host' 
+ and prop.property_name = 'TargetVersion'
+order by target_name;
+
+# Basic Aggregate targets query
+col AGGREGATE_TARGET_NAME for a30
+col AGGREGATE_TARGET_GUID for a40
+col AGGREGATE_TARGET_TYPE for a11
+col MEMBER_TARGET_TYPE for a12
+col MEMBER_TARGET_NAME for a40
+
+select AGGREGATE_TARGET_NAME   
+,AGGREGATE_TARGET_TYPE   
+,AGGREGATE_TARGET_GUID   
+,MEMBER_TARGET_NAME      
+,MEMBER_TARGET_TYPE      
+,MEMBER_TARGET_GUID      
+from MGMT$TARGET_FLAT_MEMBERS 
+where AGGREGATE_TARGET_NAME = '+ASM_ams5crs01' ;
+
+# Aggregate target query joined with mgmt$target for target_type = osm_cluster'
+
+select 
+ flat.AGGREGATE_TARGET_NAME , tar.host_name
+,flat.AGGREGATE_TARGET_TYPE   
+,flat.AGGREGATE_TARGET_GUID   
+,flat.MEMBER_TARGET_NAME      
+,flat.MEMBER_TARGET_TYPE      
+,flat.MEMBER_TARGET_GUID      
+from MGMT$TARGET_FLAT_MEMBERS flat, mgmt$target tar
+where flat.AGGREGATE_TARGET_NAME = tar.target_name
+  and flat.AGGREGATE_TARGET_TYPE = tar.target_type
+  and flat.AGGREGATE_TARGET_TYPE = 'osm_cluster'
+  and flat.MEMBER_TARGET_TYPE ='osm_instance'
+ and (tar.host_name like 'ams5odcpdorc002%' or tar.target_name like 'lon2whsqaorc005%' );
+ 
+ # query for osm_instance
+ select count(*) 
+ from MGMT$TARGET_FLAT_MEMBERS flat, mgmt$target tar
+where flat.AGGREGATE_TARGET_NAME = tar.target_name
+  and flat.AGGREGATE_TARGET_TYPE = tar.target_type
+  and flat.AGGREGATE_TARGET_TYPE = 'osm_instance'
+ and (tar.host_name like 'ams5odcpdorc002%' or tar.target_name like 'lon2whsqaorc005%' );

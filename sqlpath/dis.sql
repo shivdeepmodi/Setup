@@ -1,0 +1,2 @@
+alter session disable resumable
+/

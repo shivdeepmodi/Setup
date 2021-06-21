@@ -1,0 +1,2770 @@
+BEGIN Script on : Thu Dec  5 02:34:24 GMT 2019
+Script will be spawned: 7 times
+Running Daily check 1 of 7 ..
+Running Daily check 2 of 7 ..
+Running Daily check 3 of 7 ..
+Running Daily check 4 of 7 ..
+Running Daily check 5 of 7 ..
+Running Daily check 6 of 7 ..
+Running Daily check 7 of 7 ..
+hpqcdr: Database is Physical standby
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+WHS01LS_LNP6_01: Database is Physical standby
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+mapprod: Database is Physical standby
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+HRMDR: Database is Physical standby
+DCH01LS_NJ4_01: Database is Physical standby
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+User created.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+Grant succeeded.
+
+
+User altered.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+User created.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+STF01LS: Database is Physical standby
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+PVL01LS_LNP6_01: Database is Physical standby
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+APS01LS_LNP6_01: Database is Physical standby
+
+Grant succeeded.
+
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+Grant succeeded.
+
+
+User altered.
+
+PVL01PD_AMS5_01: Database is Physical standby
+whtcdb: Database is Physical standby
+HST01PD_AMS5: Database is Physical standby
+PVL01PD_LON2_01: Database is Physical standby
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+DCH01PD_NJ4_02~2    :FAILURE:ORA-12514: TNS:listener does not currently know of service requested in connect                                         
+APS01PD_LON6: Database is Physical standby
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+Grant succeeded.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User created.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+Grant succeeded.
+
+
+User created.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+User altered.
+
+
+Grant succeeded.
+
+
+User altered.
+
+MCA01PD_AMS5_01: Database is Physical standby
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+STF01PD_RIC1_01: Database is Physical standby
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+DCH01PD_RIC1_01: Database is Physical standby
+
+User created.
+
+
+Grant succeeded.
+
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+User altered.
+
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User created.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+User altered.
+
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+Grant succeeded.
+
+
+User created.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+Grant succeeded.
+
+
+User created.
+
+
+User altered.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+Grant succeeded.
+
+STF02LS_NJ4_01: Database is Physical standby
+
+User altered.
+
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User altered.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+User altered.
+
+IAS01PD_LON6_01: Database is Physical standby
+
+User altered.
+
+BMM01LS_LNP6_01: Database is Physical standby
+MCA02LS_LNP6_01: Database is Physical standby
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+BMM01PD_AMS5_01: Database is Physical standby
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+User created.
+
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+User created.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+Grant succeeded.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+User altered.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+User created.
+
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User created.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User created.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+Grant succeeded.
+
+
+User altered.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+User created.
+
+
+User altered.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+QTS01LS: Database is Physical standby
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+EJC01LS_LNP6_01: Database is Physical standby
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+TDL01PD_AMS5_01: Database is Physical standby
+ITESLON6: Database is Physical standby
+MIM01PD_LON6: Database is Physical standby
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+QTS01PD_NJ4_01: Database is Physical standby
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+TDL01PD_LON6_01: Database is Physical standby
+MIM02PD_AMS5_01: Database is Physical standby
+EJC01PD_LON6_01: Database is Physical standby
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+tdldr: Database is Physical standby
+EQT01LS_LNP6_01: Database is Physical standby
+mpcdr: Database is Physical standby
+
+User created.
+
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+BRD01DV_LNP6_01     :Connection:TIMEOUT 5 seconds: DB not  accesible/responding 5
+
+Grant succeeded.
+
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User altered.
+
+
+User created.
+
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+EQT01PD_LON2: Database is Physical standby
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+BRD01LS_LNP6_01: Database is Physical standby
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+Grant succeeded.
+
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+TTM01LS_LNP6_01: Database is Physical standby
+
+Grant succeeded.
+
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+User altered.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+rcatdr: Database is Physical standby
+BRDPROD_LON6: Database is Physical standby
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+KYCPD_NJ4: Database is Physical standby
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+User created.
+
+TTM01PD_AMS5_01: Database is Physical standby
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+User altered.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+User created.
+
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+Grant succeeded.
+
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+FVL01LS_LNP6_01: Database is Physical standby
+
+User created.
+
+
+Grant succeeded.
+
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+Grant succeeded.
+
+
+User altered.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+User created.
+
+
+Grant succeeded.
+
+MSA01LS_LNP6_01: Database is Physical standby
+
+User altered.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+Grant succeeded.
+
+
+User altered.
+
+REF01PD_AMS5_01: Database is Physical standby
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+BVM01LS_LNP6_01: Database is Physical standby
+
+User created.
+
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+MSA01PD_AMS5_01: Database is Physical standby
+
+User created.
+
+REF01PD_AMS5: Database is Physical standby
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User created.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+User altered.
+
+
+User altered.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+MSAPROD_LON6: Database is Physical standby
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+FVL01PD_RIC1_01: Database is Physical standby
+bvmls: Database is Physical standby
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+BVMPROD_LON6: Database is Physical standby
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+Grant succeeded.
+
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+User altered.
+
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+NJ4CLRPD: Database is Physical standby
+
+User created.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+User created.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User altered.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+User created.
+
+
+Grant succeeded.
+
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+User altered.
+
+alter user ABKUMAR profile ADMIN_USER
+*
+ERROR at line 1:
+ORA-02380: profile ADMIN_USER does not exist
+
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+alter user AVERMA profile ADMIN_USER
+*
+ERROR at line 1:
+ORA-02380: profile ADMIN_USER does not exist
+
+
+RHNSATPD: Database is Physical standby
+LNS01LS: Database is Physical standby
+CLR01PD_NJ4_01: Database is Physical standby
+nj4stfpd: Database is Physical standby
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+alter user ABKUMAR profile ADMIN_USER
+*
+ERROR at line 1:
+ORA-02380: profile ADMIN_USER does not exist
+
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+alter user AVERMA profile ADMIN_USER
+*
+ERROR at line 1:
+ORA-02380: profile ADMIN_USER does not exist
+
+
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+alter user ABKUMAR profile ADMIN_USER
+*
+ERROR at line 1:
+ORA-02380: profile ADMIN_USER does not exist
+
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+LNS01PD_NJ4_01: Database is Physical standby
+alter user AVERMA profile ADMIN_USER
+*
+ERROR at line 1:
+ORA-02380: profile ADMIN_USER does not exist
+
+
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+RIC1CLRPD: Database is Physical standby
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+NWS01PD_AMS5: Database is Physical standby
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+Grant succeeded.
+
+
+User created.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+RIC1STFPD: Database is Physical standby
+
+User created.
+
+
+Grant succeeded.
+
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+User altered.
+
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+alter user ABKUMAR profile ADMIN_USER
+*
+ERROR at line 1:
+ORA-02380: profile ADMIN_USER does not exist
+
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+alter user AVERMA profile ADMIN_USER
+*
+ERROR at line 1:
+ORA-02380: profile ADMIN_USER does not exist
+
+
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+GTX01PD_LON6_01: Database is Physical standby
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+UXS03PD_NJ4_01: Database is Physical standby
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+User created.
+
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+Grant succeeded.
+
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+alter user ABKUMAR profile ADMIN_USER
+*
+ERROR at line 1:
+ORA-02380: profile ADMIN_USER does not exist
+
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+alter user AVERMA profile ADMIN_USER
+*
+ERROR at line 1:
+ORA-02380: profile ADMIN_USER does not exist
+
+
+
+Grant succeeded.
+
+alter user ABKUMAR profile ADMIN_USER
+*
+ERROR at line 1:
+ORA-02380: profile ADMIN_USER does not exist
+
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+alter user AVERMA profile ADMIN_USER
+*
+ERROR at line 1:
+ORA-02380: profile ADMIN_USER does not exist
+
+
+
+User created.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+User altered.
+
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+                             *
+ERROR at line 1:
+ORA-01920: user name 'ABKUMAR' conflicts with another user or role name
+
+
+
+Grant succeeded.
+
+alter user ABKUMAR profile ADMIN_USER
+*
+ERROR at line 1:
+ORA-02380: profile ADMIN_USER does not exist
+
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+                             *
+ERROR at line 1:
+ORA-01920: user name 'AVERMA' conflicts with another user or role name
+
+
+
+Grant succeeded.
+
+alter user AVERMA profile ADMIN_USER
+*
+ERROR at line 1:
+ORA-02380: profile ADMIN_USER does not exist
+
+
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+User altered.
+
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User created.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User created.
+
+
+User altered.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+                             *
+ERROR at line 1:
+ORA-01920: user name 'ABKUMAR' conflicts with another user or role name
+
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+                             *
+ERROR at line 1:
+ORA-01920: user name 'AVERMA' conflicts with another user or role name
+
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User altered.
+
+
+User created.
+
+
+Grant succeeded.
+
+LNSPD_RIC1: Database is Physical standby
+
+User altered.
+
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+LNSPD: Database is Physical standby
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+END Running  report end on : Thu Dec  5 02:35:32 GMT 2019
+Removing lock file
+old   1: create user /* &&comment */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ ABKUMAR identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+old   1: create user /* &&comment */ AVERMA identified by SzMyyVYMS8JzOZL7
+new   1: create user /* CHG0139751 */ AVERMA identified by SzMyyVYMS8JzOZL7
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+

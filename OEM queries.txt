@@ -1,0 +1,24 @@
+Something extra to add is that there are other views if you want to do historical queries:
+
+# Tables that hold paramter data (also historic values):
+# ------------------------------------------------------
+ 
+Table Name Retention Parameter Retention Days
+-----------------------------------------------------------------------
+MGMT_METRICS_RAW mgmt_raw_keep_window 7
+MGMT_METRICS_1HOUR mgmt_hour_keep_window 31
+MGMT_METRICS_1DAY mgmt_day_keep_window 365
+For a 7 month report, you should use MGMT_METRICS_1DAY, it joins the same way: using(target_guid,metric_guid)
+But the column with the values is: VALUE_MAXIMUM and the one with the date is: ROLLUP_TIMESTAMP.
+Where clause should look like:
+
+ROLLUP_TIMESTAMP>sysdate-90
+
+In the Select clause
+
+to_char(ROLLUP_TIMESTAMP,'yyyy-mm') Month,
+In the case of the value, this is what I did:
+
+round(max(VALUE_MAXIMUM),2)
+
+Hope it helps

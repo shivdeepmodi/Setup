@@ -1,0 +1,3 @@
+rm /home/oracle/shivdeep/temp_work/*.sql
+rm /home/oracle/shivdeep/temp_work/*.log 2>/dev/null
+mk_ln 2>/dev/null

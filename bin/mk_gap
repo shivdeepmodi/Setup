@@ -1,0 +1,17 @@
+#!/bin/ksh93
+echo File : $1
+while read line
+do
+#/home/oracle/shivdeep/bin/rman.template
+set -A Array `echo $line`
+#echo $line
+thread=${Array[0]}
+toseq=${Array[1]}
+fromseq=${Array[2]}
+
+echo \# THREAD:$thread :: FROM_SEQ:$fromseq :: TO_SEQ: $toseq 
+
+cat /home/oracle/shivdeep/bin/rman.template|sed "s!THREAD!${thread}!g" | sed "s!START!${fromseq}!g" \
+    |sed "s!END!${toseq}!g"
+
+done < $1

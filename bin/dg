@@ -1,0 +1,18 @@
+#!/bin/ksh
+grep -wi $1 /home/oracle/shivdeep/dbmon/db_pass > /dev/null
+if [[ $? -ne 0 ]];then
+echo
+ echo $1 is not setup.. 
+echo
+else
+ grep -wi ^${1} /home/oracle/shivdeep/TNS_ADMIN/tnsnames.ora 
+ if [[ $? -ne 0 ]]; then
+   echo $1 is missing in tns
+ else
+   set -A set1 `grep -iw $1 /home/oracle/shivdeep/dbmon/db_pass`
+   db_name=${set1[0]};
+   usr=${set1[1]};
+   password=${set1[2]};
+   dgmgrl ${usr}/${password}@${db_name}
+ fi
+fi

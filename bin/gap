@@ -1,0 +1,38 @@
+#!/bin/ksh
+dbrole=`sqls $1 <<!
+set head off pages 0 lines 80 feedback off
+select replace(database_role,' ','_') from v\\$database;
+!
+`
+if [[ ${dbrole} = 'PRIMARY' ]];then
+ echo ' '
+ echo $1: dbrole : $dbrole
+
+sqls $1 <<!
+set lines 300 pages 100
+col archive_dest for a50
+col error for a60
+SELECT INST_ID,DEST_ID, STATUS DB_STATUS,DESTINATION ARCHIVE_DEST,ERROR ERROR
+  FROM GV\$ARCHIVE_DEST
+ WHERE destination is not null
+order by inst_id,dest_id;
+
+col dest_name for a20
+col status for a20
+col destination for a20
+col gap_status for a20
+select inst_id,dest_name, status, destination, gap_status from gv\$archive_dest_status where type = 'PHYSICAL'
+order by inst_id;
+
+
+!
+###
+else
+ echo ' '
+ echo $1: dbrole : $dbrole
+sqls $1 <<!
+set lines 300
+@$SPATH/stdby.sql
+!
+fi
+

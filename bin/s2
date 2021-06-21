@@ -1,0 +1,30 @@
+#!/bin/ksh
+export TNS_ADMIN=/home/oracle/shivdeep/TNS_ADMIN
+grep -wi $1 /home/oracle/shivdeep/dbmon/db_pass|grep -v ^\# > /dev/null
+unset SQLPATH
+if [[ $? -ne 0 ]];then
+echo
+ echo $1 is not setup.. 
+echo
+else
+ grep -wi ^${1} /home/oracle/shivdeep/TNS_ADMIN/tnsnames.ora  > /dev/null
+ if [[ $? -ne 0 ]]; then
+   echo $1 is missing in tns
+ else
+   set -A set1 `grep -iw $1 /home/oracle/shivdeep/dbmon/db_pass`
+   db_name=${set1[0]};
+   export TWO_TASK=${db_name}
+   usr=${set1[1]};
+   password=${set1[2]};
+   #echo usr: $usr
+   #echo sqlplus -l ${usr}/${password}@${db_name} as sysdba
+   #echo
+   #echo ${password}
+   #echo
+   if [[ $usr = 'sys' ]];then
+   sqlplus -l -s ${usr}/${password}@${db_name} as sysdba
+   else
+   sqlplus -l ${usr}/${password}@${db_name}
+   fi
+ fi
+fi

@@ -1,0 +1,10 @@
+<table border=1 width=100%>
+<tr>
+<td>DB_NAME      </td>
+<td>DATABASE_ROLE      </td>
+<td>HOST_NAME      </td>
+<td>PARAM_NAME</td> 
+<td>MAX_DBFILES </td>
+<td>DATAFILE_COUNT</td> 
+<td>DATAFILES_CAN_BE_ADDED </td>
+</tr>

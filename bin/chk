@@ -1,0 +1,6 @@
+#!/bin/ksh
+set -A set1 `grep -i $1 /home/oracle/shivdeep/dbmon/db_pass`
+db_name=${set1[0]};
+usr=${set1[1]};
+password=${set1[2]};
+echo $db_name :- `sqlplus -l fake_user/fake_password@${db_name} |grep ORA-`

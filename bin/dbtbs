@@ -1,0 +1,23 @@
+#!/bin/ksh
+for ii in `get $1`
+do
+dbrole=`sqls $ii <<!
+set lines 300 pages 0 trimspool on feedback off timing off
+select replace(database_role,' ','_') from v\\$database;
+!
+`
+dbrole=`echo $dbrole|awk '{print$1}'`
+if [[ $dbrole == 'PRIMARY' ]];then
+echo ' '
+echo $ii:$dbrole:CALCULATE
+spoolfile=`mktemp`
+sqls $ii <<!|grep -v Elap
+set feedback on
+@/home/oracle/shivdeep/dbmon/tbs_check.sql ON $spoolfile
+!
+else 
+echo ' '
+echo $ii:$dbrole:SKIP
+fi
+done
+rm $spoolfile

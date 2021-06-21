@@ -1,0 +1,37 @@
+@dashtop sql_opname,event2 sql_id='3dquj9dfw5cz0' "TO_TIMESTAMP('2019-08-20 09:00:00','YYYY-MM-DD HH24:MI:SS.FF')" "TO_TIMESTAMP('2019-08-20 11:00:00','YYYY-MM-DD HH24:MI:SS.FF')"
+
+@ashtop session_state,event 1=1 sysdate-10/24/60 sysdate
+
+@ashtop session_state,event 1=1 "to_timestamp(to_date('&time1','DD-MON-YYYY HH24:MI:SS'),'DD-MON-YYYY HH24:MI:SS.FF')" "to_timestamp(to_date('&time2','DD-MON-YYYY HH24:MI:SS'),'DD-MON-YYYY HH24:MI:SS.FF')"
+
+# sql corresponding to Wait event 
+@ashtop sql_id,event "event='&event'" sysdate-1/24/60 sysdate
+
+E.g
+@ashtop sql_id,event "event='db file sequential read'" sysdate-10/24/60 sysdate
+
+# what the sql does
+
+@sqlid &sql_id %
+
+@ashtop sid,sql_id,session_state,event sql_id='&sql_id' sysdate-1/24/60 sysdate
+
+Run snappert for sql
+
+@snapper all 5 1 &sid
+
+
+
+# Event where sql id is null
+@ashtop session_state,event,sql_id "sql_id is null" sysdate-1/24/60 sysdate
+
+@ashtop session_state,event,sql_id,session_type "sql_id is null and session_type='FOREGROUND'" sysdate-1/24/60 sysdate
+
+# List execution phase 
+@time_model session_state,event,sql_id,session_type,top_level_call_name "sql_id is null and session_type='FOREGROUND'" sysdate-1/24/60 sysdate
+
+# SQL Monitoring uses this
+@ashtop "session_state,event,sql_id,sql_plan_operation||' '||sql_plan_options" sql_id='&sql_id' sysdate-1/24/60 sysdate
+
+# GET sql which might not be caught by sql monitoring
+@asqlmon &sql_id % sysdate-1 sysdate

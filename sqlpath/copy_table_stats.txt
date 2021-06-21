@@ -1,0 +1,29 @@
+select 'exec dbms_stats.copy_table_stats('''||sourc.table_owner||''', '''||sourc.table_name||''', srcpartname=>'''||
+sourc.partition_name||''', dstpartname=>'''||dest.partition_name||''', FORCE=>TRUE);' copy_stmt
+--select sourc.partition_name,  dest.partition_name
+--,sourc.partition_position, dest.partition_position
+from all_tab_partitions sourc, all_tab_partitions dest,
+(
+        select table_owner, table_name, partition_name
+        from
+        (
+                select table_owner, table_name, partition_name, num_rows, partition_position,
+                row_number() over (partition by table_owner, table_name order by num_rows desc, partition_position) rowN
+                from all_tab_partitions
+                where table_owner = 'MSA'
+                and num_rows is not null
+        ) where rowN = 1
+) max_row_partition
+where sourc.table_owner = 'MSA'
+--and sourc.table_name = '&tab_name'
+--and upper(sourc.partition_name) like '%W13JUL15'
+and sourc.table_owner = max_row_partition.table_owner
+and sourc.table_name = max_row_partition.table_name
+and sourc.partition_name = max_row_partition.partition_name
+and dest.table_owner = sourc.table_owner
+and dest.table_name = sourc.table_name
+and dest.partition_name like 'TRADE_%MAR17'
+and dest.partition_position != sourc.partition_position
+--and dest.partition_position > sourc.partition_position
+--and (dest.partition_position - sourc.partition_position) <= 4
+order by sourc.table_name,dest.partition_position;

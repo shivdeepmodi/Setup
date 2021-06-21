@@ -1,0 +1,62 @@
+Metalink ID  Real-Time SQL Monitoring in 11g (Doc ID 1229904.1)
+
+ 
+DETAILS
+
+Real-time SQL monitoring is automatically started when a SQL command runs in parallel or 
+when it has consumed at least 5 seconds of CPU or I/O time in a single execution.
+
+ 
+PREREQUISITES
+
+statistics_level = TYPICAL or ALL
+control_management_pack_access = DIAGNOSTIC+TUNING
+ 
+HINTS RELATED TO REAL-TIME SQL MONITORING
+
+MONITOR : To force real-time SQL monitoring
+NO_MONITOR : To prevent the query from being monitored
+
+ 
+EXAMPLES
+
+ 1. To find information about currently long-running queries
+
+set lines 200 pages 200
+col sql_text for a50
+col username for a12
+col sid for 9999
+col key for 99999999999999
+ 
+select key, sid, username, sql_id, sql_plan_hash_value plan_hash, elapsed_time, cpu_time, buffer_gets, disk_reads, substr(sql_text,1,50) sql_text
+from v$sql_monitor
+where status = 'EXECUTING';
+
+2. To find the execution plan for a key value.
+
+set lines 200 pages 200
+col operation for a32
+col plan_options for a20
+col plan_object_name for a24
+col id for 999
+ 
+select plan_line_id id, lpad (' ', plan_depth) || plan_operation operation , plan_options , plan_object_name , plan_cardinality card, plan_cost 
+from v$sql_monitor q, v$sql_plan_monitor p
+where q.key = p.key
+and q.key = '&key'
+order by id;
+
+  
+3. To find the execution plans of currently long-running queries
+
+set lines 200 pages 200
+col operation for a32
+col plan_options for a20
+col plan_object_name for a24
+col id for 999
+break on sql_id on plan_hash
+
+select sql_id, sql_plan_hash_value plan_hash, plan_line_id id, lpad (' ', plan_depth) || plan_operation operation , plan_options , plan_object_name , plan_cardinality card, plan_cost 
+from v$sql_plan_monitor 
+where status = 'EXECUTING'
+order by key, id;

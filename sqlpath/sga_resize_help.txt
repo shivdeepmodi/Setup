@@ -1,0 +1,51 @@
+select 
+   to_Date(to_char(ORIGINATING_TIMESTAMP,'DD-MON-YYYY HH24:MI:SS'),'DD-MON-YYYY HH24:MI:SS') time ,
+   message_text 
+from 
+   sys.x$dbgalertext
+where   --originating_timestamp > sysdate - 30 and    
+message_text like '%ORA-04031%'
+order by    originating_timestamp;
+
+
+col parameter for a22
+col COMPONENT for a25
+select * from v$sga_resize_ops;
+
+column        c1     heading 'Pool |Size(M)'
+column        c2     heading 'Size|Factor'
+column        c3     heading 'Est|LC(M)  '
+column        c4     heading 'Est LC|Mem. Obj.'
+column        c5     heading 'Est|Time|Saved|(sec)'
+column        c6     heading 'Est|Parse|Saved|Factor'
+column c7     heading 'Est|Object Hits'   format 999,999,999
+
+
+SELECT
+   shared_pool_size_for_estimate  c1,
+   shared_pool_size_factor        c2,
+   estd_lc_size                   c3,
+   estd_lc_memory_objects         c4,
+   estd_lc_time_saved                    c5,
+   estd_lc_time_saved_factor             c6,
+   estd_lc_memory_object_hits            c7
+FROM
+   v$shared_pool_advice;
+   
+--SGA Components
+SELECT i.instance_name,s.component, current_size/1024/1024 as size_mb, min_size/1024/1024 as min_size_mb
+FROM gv$sga_dynamic_components s, gv$instance i
+WHERE current_size > 0
+and s.inst_id=i.inst_id
+ORDER BY 1,2;
+
+SELECT i.instance_name,s.name,s.value/1048576/1024
+FROM gv$parameter s, gv$instance i
+WHERE name like 'sga%'
+and s.inst_id=i.inst_id
+ORDER BY 1,2;
+
+ SELECT shared_pool_size_for_estimate,
+ shared_pool_size_factor,
+ estd_lc_time_saved
+ FROM v$shared_pool_advice;

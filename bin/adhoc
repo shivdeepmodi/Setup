@@ -1,0 +1,7 @@
+for ii in `get $1`
+do
+sqls $ii <<!
+set lines 300
+@$SPATH/$2
+!
+done

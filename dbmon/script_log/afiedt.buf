@@ -1,0 +1,33 @@
+select sid,
+       serial#,sql_id,
+       inst_id,
+       username,--module,
+       osuser,
+       machine,
+       terminal,
+--       server,
+       decode(s.command,0,'0',
+                        1,'CREATE TABLE',
+                        2,'INSERT',
+                        3,'SELECT',
+                        6,'UPDATE',
+                        7,'DELETE',
+                        9,'CREATE INDEX',
+                        11,'ALTER INDEX',
+                        15,'ALTER TABLE',
+                        21,'CREATE VIEW',
+                        26,'LOCK TABLE',
+                        44,'COMMIT',
+                        45,'ROLLBACK',
+                        47,'PLSQL EXECUTE',
+                        62,'ANALYZE TABLE',
+                        63,'ANALYZE INDEX',
+                        s.command
+             ) command,
+       logon_time,
+       last_call_et,
+       substr(s.program,1,20) program,
+       s.status
+	     from gv$session s
+ where sql_id = '80h84c137634r'
+/

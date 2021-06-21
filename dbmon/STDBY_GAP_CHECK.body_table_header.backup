@@ -1,0 +1,10 @@
+<table border=1 width=100%>
+<tr>
+<td>DB_NAME      </td>
+<td>DATABASE_ROLE      </td>
+<td>HOST_NAME      </td>
+<td>THREAD      </td>
+<td>LAST_SEQ_RECIEVED         </td>
+<td>LAST_SEQ_APPLIED         </td>
+<td>DIFFERENCE</td>
+</tr>

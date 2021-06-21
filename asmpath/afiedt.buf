@@ -1,0 +1,5 @@
+select aa.group_number, ad.name, aa.name attribute_name, aa.value
+from v$asm_attribute aa, v$asm_diskgroup ad
+where ( aa.name like '%sector_size%')
+       and aa.group_number=ad.group_number
+/

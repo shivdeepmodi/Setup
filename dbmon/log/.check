@@ -1,0 +1,168 @@
+Connected to bvmprodsh
+Connected to bvmprodsh
+BEFORE_SW_RFC_65852	      |16-SEP-17 09.59.45.000000000 AM	  |YES
+SWBACK_RFC_65855	      |16-SEP-17 07.44.37.000000000 PM	  |YES
+Connected to bvmprodsh
+Connected to bvmprodsh
+Connected to bvmprodsh
+BEFORE_SW_RFC_65852	      |16-SEP-17 09.59.45.000000000 AM	  |YES
+SWBACK_RFC_65855	      |16-SEP-17 07.44.37.000000000 PM	  |YES
+Connected to bvmprodsh
+Connected to bvmprodsh
+Connected to bvmprodsh
+BEFORE_SW_RFC_65852	      |16-SEP-17 09.59.45.000000000 AM	  |YES
+SWBACK_RFC_65855	      |16-SEP-17 07.44.37.000000000 PM	  |YES
+Connected to bvmprodsh
+Connected to bvmprodsh
+Connected to bvmprodsh
+BEFORE_SW_RFC_65852	      |16-SEP-17 09.59.45.000000000 AM	  |YES
+SWBACK_RFC_65855	      |16-SEP-17 07.44.37.000000000 PM	  |YES
+Connected to bvmprodsh
+Connected to bvmprodsh
+Connected to bvmprodsh
+BEFORE_SW_RFC_65852	      |16-SEP-17 09.59.45.000000000 AM	  |YES
+SWBACK_RFC_65855	      |16-SEP-17 07.44.37.000000000 PM	  |YES
+Connected to bvmprodsh
+Connected to bvmprodsh
+Connected to bvmprodsh
+BEFORE_SW_RFC_65852	      |16-SEP-17 09.59.45.000000000 AM	  |YES
+SWBACK_RFC_65855	      |16-SEP-17 07.44.37.000000000 PM	  |YES
+Connected to bvmprodsh
+BEFORE_SW_RFC_65852	      |16-SEP-17 09.59.45.000000000 AM	  |YES
+SWBACK_RFC_65855	      |16-SEP-17 07.44.37.000000000 PM	  |YES
+BEFORE_SW_RFC_65852	      |16-SEP-17 09.59.45.000000000 AM	  |YES
+SWBACK_RFC_65855	      |16-SEP-17 07.44.37.000000000 PM	  |YES
+2 rows selected.
+BEFORE_SW_RFC_65852	      |16-SEP-17 09.59.45.000000000 AM	  |YES
+SWBACK_RFC_65855	      |16-SEP-17 07.44.37.000000000 PM	  |YES
+2 rows selected.
+SP2-0310: unable to open file "/home/oracle/shivdeep//home/oracle/shivdeep/t11_aec.sql"
+SP2-0310: unable to open file "/home/oracle/shivdeep//home/oracle/shivdeep/rp.sql"
+SP2-0310: unable to open file "/home/oracle/shivdeep//home/oracle/shivdeep/fra1.sql"
+BEFORE_SW_RFC_65852	      |16-SEP-17 09.59.45.000000000 AM	  |YES
+SWBACK_RFC_65855	      |16-SEP-17 07.44.37.000000000 PM	  |YES
+2 rows selected.
+BEFORE_SW_RFC_65852	      |16-SEP-17 09.59.45.000000000 AM	  |YES
+SWBACK_RFC_65855	      |16-SEP-17 07.44.37.000000000 PM	  |YES
+2 rows selected.
+BEFORE_SW_RFC_65852	      |16-SEP-17 09.59.45.000000000 AM	  |YES
+SWBACK_RFC_65855	      |16-SEP-17 07.44.37.000000000 PM	  |YES
+2 rows selected.
+BEFORE_SW_RFC_65852	      |16-SEP-17 09.59.45.000000000 AM	  |YES
+SWBACK_RFC_65855	      |16-SEP-17 07.44.37.000000000 PM	  |YES
+2 rows selected.
+BEFORE_SW_RFC_65852	      |16-SEP-17 09.59.45.000000000 AM	  |YES
+SWBACK_RFC_65855	      |16-SEP-17 07.44.37.000000000 PM	  |YES
+2 rows selected.
+bvmprodsh	    |USERS			   |	 32733|     31393|	1340|	     96
+bvmprodsh	    |DATA			   |	  1352|      1019|	 333|	     75
+bvmprodsh	    |PRICES_MAY16		   |	   540|       296|	 244|	     55
+bvmprodsh	    |PRICES_JAN15		   |	   570|       333|	 237|	     58
+bvmprodsh	    |PRICES_MAY15		   |	   480|       248|	 232|	     52
+bvmprodsh	    |PRICES_JUL15		   |	   480|       280|	 200|	     58
+bvmprodsh	    |PRICES_JAN16		   |	   450|       260|	 190|	     58
+bvmprodsh	    |PRICES_JUN17		   |	   500|       319|	 181|	     64
+bvmprodsh	    |PRICES_OCT15		   |	   450|       274|	 176|	     61
+bvmprodsh	    |PRICES_DEC15		   |	   450|       280|	 170|	     62
+bvmprodsh	    |PRICES_AUG15		   |	   430|       261|	 169|	     61
+bvmprodsh	    |PRICES_APR15		   |	   420|       260|	 160|	     62
+bvmprodsh	    |PRICES_MAR15		   |	   420|       260|	 160|	     62
+bvmprodsh	    |PRICES_JUN16		   |	   480|       322|	 158|	     67
+bvmprodsh	    |PRICES_MAR16		   |	   450|       294|	 156|	     65
+bvmprodsh	    |PRICES_FEB16		   |	   420|       269|	 151|	     64
+bvmprodsh	    |PRICES_SEP15		   |	   420|       271|	 149|	     64
+bvmprodsh	    |PRICES_APR16		   |	   420|       275|	 145|	     66
+bvmprodsh	    |PRICES_JUL16		   |	   480|       337|	 143|	     70
+bvmprodsh	    |PRICES_JUN15		   |	   390|       257|	 133|	     66
+bvmprodsh	    |PRICES_FEB15		   |	   360|       245|	 115|	     68
+bvmprodsh	    |PRICES_NOV15		   |	   361|       254|	 107|	     70
+bvmprodsh	    |PRICES_NOV14		   |	   210|       122|	  88|	     58
+bvmprodsh	    |PRICES_DEC14		   |	   210|       152|	  58|	     72
+bvmprodsh	    |PRICES_SEP14		   |	   180|       125|	  55|	     69
+bvmprodsh	    |PRICES_FEB14		   |	   150|        99|	  51|	     66
+bvmprodsh	    |PRICES_MAR14		   |	   180|       130|	  50|	     72
+bvmprodsh	    |PRICES_JUN14		   |	   152|       102|	  50|	     67
+bvmprodsh	    |PRICES_OCT14		   |	   180|       131|	  49|	     73
+bvmprodsh	    |PRICES_APR14		   |	   180|       133|	  47|	     74
+bvmprodsh	    |PRICES_DEC12		   |	   100|        54|	  46|	     54
+bvmprodsh	    |PRICES_JAN14		   |	   120|        78|	  42|	     65
+bvmprodsh	    |PRICES_OCT11		   |	    90|        48|	  42|	     53
+bvmprodsh	    |PRICES_NOV13		   |	    90|        49|	  41|	     55
+bvmprodsh	    |PRICES_JUL14		   |	   165|       126|	  39|	     77
+bvmprodsh	    |PRICES_APR13		   |	    90|        52|	  38|	     58
+bvmprodsh	    |PRICES_OCT12		   |	    90|        53|	  37|	     59
+bvmprodsh	    |PRICES_DEC13		   |	    90|        53|	  37|	     59
+bvmprodsh	    |PRICES_NOV12		   |	    90|        54|	  36|	     61
+bvmprodsh	    |PRICES_AUG14		   |	   150|       118|	  32|	     78
+bvmprodsh	    |PRICES_JUL12		   |	    62|        34|	  28|	     55
+bvmprodsh	    |PRICES_FEB13		   |	    90|        63|	  27|	     70
+bvmprodsh	    |PRICES_JUN12		   |	    60|        33|	  27|	     55
+bvmprodsh	    |PRICES_MAR13		   |	    90|        64|	  26|	     71
+bvmprodsh	    |PRICES_MAY14		   |	   120|        94|	  26|	     78
+bvmprodsh	    |PRICES_JUL11		   |	    65|        41|	  24|	     64
+bvmprodsh	    |PRICES_AUG11		   |	    70|        47|	  23|	     68
+bvmprodsh	    |PRICES_SEP11		   |	    60|        38|	  22|	     63
+bvmprodsh	    |PRICES_MAY13		   |	    60|        40|	  20|	     67
+bvmprodsh	    |PRICES_AUG12		   |	    60|        41|	  19|	     68
+bvmprodsh	    |UNDOTBS3			   |	    30|        21|	   9|	     70
+bvmprodsh	    |UNDOTBS2			   |	    20|        15|	   5|	     75
+52 rows selected.
+BEFORE_SW_RFC_65852	      |16-SEP-17 09.59.45.000000000 AM	  |YES
+SWBACK_RFC_65855	      |16-SEP-17 07.44.37.000000000 PM	  |YES
+2 rows selected.
+bvmprodsh	    |USERS			   |	 32733|     31393|	1340|	     96
+bvmprodsh	    |DATA			   |	  1352|      1019|	 333|	     75
+bvmprodsh	    |PRICES_MAY16		   |	   540|       296|	 244|	     55
+bvmprodsh	    |PRICES_JAN15		   |	   570|       333|	 237|	     58
+bvmprodsh	    |PRICES_MAY15		   |	   480|       248|	 232|	     52
+bvmprodsh	    |PRICES_JUL15		   |	   480|       280|	 200|	     58
+bvmprodsh	    |PRICES_JAN16		   |	   450|       260|	 190|	     58
+bvmprodsh	    |PRICES_JUN17		   |	   500|       319|	 181|	     64
+bvmprodsh	    |PRICES_OCT15		   |	   450|       274|	 176|	     61
+bvmprodsh	    |PRICES_DEC15		   |	   450|       280|	 170|	     62
+bvmprodsh	    |PRICES_AUG15		   |	   430|       261|	 169|	     61
+bvmprodsh	    |PRICES_APR15		   |	   420|       260|	 160|	     62
+bvmprodsh	    |PRICES_MAR15		   |	   420|       260|	 160|	     62
+bvmprodsh	    |PRICES_JUN16		   |	   480|       322|	 158|	     67
+bvmprodsh	    |PRICES_MAR16		   |	   450|       294|	 156|	     65
+bvmprodsh	    |PRICES_FEB16		   |	   420|       269|	 151|	     64
+bvmprodsh	    |PRICES_SEP15		   |	   420|       271|	 149|	     64
+bvmprodsh	    |PRICES_APR16		   |	   420|       275|	 145|	     66
+bvmprodsh	    |PRICES_JUL16		   |	   480|       337|	 143|	     70
+bvmprodsh	    |PRICES_JUN15		   |	   390|       257|	 133|	     66
+bvmprodsh	    |PRICES_FEB15		   |	   360|       245|	 115|	     68
+bvmprodsh	    |PRICES_NOV15		   |	   361|       254|	 107|	     70
+bvmprodsh	    |PRICES_NOV14		   |	   210|       122|	  88|	     58
+bvmprodsh	    |PRICES_DEC14		   |	   210|       152|	  58|	     72
+bvmprodsh	    |PRICES_SEP14		   |	   180|       125|	  55|	     69
+bvmprodsh	    |PRICES_FEB14		   |	   150|        99|	  51|	     66
+bvmprodsh	    |PRICES_MAR14		   |	   180|       130|	  50|	     72
+bvmprodsh	    |PRICES_JUN14		   |	   152|       102|	  50|	     67
+bvmprodsh	    |PRICES_OCT14		   |	   180|       131|	  49|	     73
+bvmprodsh	    |PRICES_APR14		   |	   180|       133|	  47|	     74
+bvmprodsh	    |PRICES_DEC12		   |	   100|        54|	  46|	     54
+bvmprodsh	    |PRICES_JAN14		   |	   120|        78|	  42|	     65
+bvmprodsh	    |PRICES_OCT11		   |	    90|        48|	  42|	     53
+bvmprodsh	    |PRICES_NOV13		   |	    90|        49|	  41|	     55
+bvmprodsh	    |PRICES_JUL14		   |	   165|       126|	  39|	     77
+bvmprodsh	    |PRICES_APR13		   |	    90|        52|	  38|	     58
+bvmprodsh	    |PRICES_OCT12		   |	    90|        53|	  37|	     59
+bvmprodsh	    |PRICES_DEC13		   |	    90|        53|	  37|	     59
+bvmprodsh	    |PRICES_NOV12		   |	    90|        54|	  36|	     61
+bvmprodsh	    |PRICES_AUG14		   |	   150|       118|	  32|	     78
+bvmprodsh	    |PRICES_JUL12		   |	    62|        34|	  28|	     55
+bvmprodsh	    |PRICES_FEB13		   |	    90|        63|	  27|	     70
+bvmprodsh	    |PRICES_JUN12		   |	    60|        33|	  27|	     55
+bvmprodsh	    |PRICES_MAR13		   |	    90|        64|	  26|	     71
+bvmprodsh	    |PRICES_MAY14		   |	   120|        94|	  26|	     78
+bvmprodsh	    |PRICES_JUL11		   |	    65|        41|	  24|	     64
+bvmprodsh	    |PRICES_AUG11		   |	    70|        47|	  23|	     68
+bvmprodsh	    |PRICES_SEP11		   |	    60|        38|	  22|	     63
+bvmprodsh	    |PRICES_MAY13		   |	    60|        40|	  20|	     67
+bvmprodsh	    |PRICES_AUG12		   |	    60|        41|	  19|	     68
+bvmprodsh	    |UNDOTBS3			   |	    30|        21|	   9|	     70
+bvmprodsh	    |UNDOTBS2			   |	    20|        15|	   5|	     75
+52 rows selected.
+BEFORE_SW_RFC_65852	      |16-SEP-17 09.59.45.000000000 AM	  |YES
+SWBACK_RFC_65855	      |16-SEP-17 07.44.37.000000000 PM	  |YES
+2 rows selected.

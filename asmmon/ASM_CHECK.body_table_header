@@ -1,0 +1,12 @@
+<table border=1 width=100%>
+<tr>
+<td>COLLECTION_DATE      </td>
+<td>HOST_NAME      </td>
+<td>DISKGROUP</td> 
+<td>TOTAL_GB </td>
+<td>FREE_GB</td> 
+<td>PCT_FREE </td>
+<td>PCT_USED </td>
+<td>THRESHOLD </td>
+<td>ADD_RECOMMEND_TB </td>
+</tr>

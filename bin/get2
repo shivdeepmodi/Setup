@@ -1,0 +1,3 @@
+cat $1|grep '\- P' |sed 's!- P.!~!g'|cut -d "~" -f2|cut -d "-" -f2 > ${1}.tmp
+mkots ${1}.tmp
+cat ots1.sql

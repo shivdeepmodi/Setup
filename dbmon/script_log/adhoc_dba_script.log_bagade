@@ -1,0 +1,1545 @@
+BEGIN Script on : Thu Jan 28 02:53:43 GMT 2021
+Script will be spawned: 6 times
+Running Daily check 1 of 6 ..
+Running Daily check 2 of 6 ..
+Running Daily check 3 of 6 ..
+Running Daily check 4 of 6 ..
+Running Daily check 5 of 6 ..
+Running Daily check 6 of 6 ..
+TDL01DV_LNP6_01~6   :FAILURE:ORA-09817: Write to audit file failed.
+ORA-01075: you are currently logged on                                           
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+PVL01DV 	USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+TDL01PD_AMS5_01: Database is Physical standby
+PVL01LS_LNP6_01: Database is Physical standby
+
+User created.
+
+
+Grant succeeded.
+
+alter user ABAGADE profile ADMIN_USER
+*
+ERROR at line 1:
+ORA-02380: profile ADMIN_USER does not exist
+
+
+
+GTQA		USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+PVL01PD_AMS5_01: Database is Physical standby
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+TDLPD		USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+GTX02DV_LNP6_01~3   :FAILURE:ORA-09817: Write to audit file failed.
+ORA-01075: you are currently logged on                                           
+
+MAPPROD 	USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+PVLPD		USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+TDLQA		USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+TDL02DV_LNP6_01~6   :FAILURE:ORA-12154: TNS:could not resolve the connect identifier specified                                                       
+ANA01PD_NJ4_01      :Connection:TIMEOUT 5 seconds: DB not  accesible/responding 5
+PVL01PD_LON6_01: Database is Physical standby
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+DCH01PD 	USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+TTM01DV_LNP6_01~6   :FAILURE:ORA-12514: TNS:listener does not currently know of service requested in connect                                         
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+GTX02PD 	USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+MAPUAT		USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+
+PVL01QA 	USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+
+User altered.
+
+TTM01LS_LNP6_01~6   :FAILURE:ORA-12514: TNS:listener does not currently know of service requested in connect                                         
+
+MFE		USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+PVL01UT 	USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+
+User created.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+User created.
+
+TTM01PD_AMS5_01: Database is Physical standby
+
+User altered.
+
+
+User altered.
+
+
+MFE		USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+DCH01QA 	USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+HST01PD_LON6_01: Database is Physical standby
+DEV01EJC_LNP6_01~2  :FAILURE:ORA-12514: TNS:listener does not currently know of service requested in connect                                         
+
+User created.
+
+
+ANA01PD 	USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+PVL02QA 	USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+
+User created.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+BDV		USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+
+Grant succeeded.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+TOTEMPRD	USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+
+User altered.
+
+
+User altered.
+
+
+PWS01PD 	USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+
+MAP02QA 	USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+
+User created.
+
+
+Grant succeeded.
+
+TTM01QA_LNP6_01~6   :FAILURE:ORA-12514: TNS:listener does not currently know of service requested in connect                                         
+
+User created.
+
+
+User altered.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+EDS		USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+
+MCA01DV 	USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+MCA01PD_AMS5_01: Database is Physical standby
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+BJD		USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+User created.
+
+
+MFE		USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+EDV		USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+PWS02PD 	USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+EJC01LS_LNP6_01: Database is Physical standby
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+BMM01DV 	USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+
+User created.
+
+BMM01LS_LNP6_01: Database is Physical standby
+
+Grant succeeded.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+User altered.
+
+
+TTM01UT 	USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+
+MCAPD		USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+TTM40PD_LOV2_01: Database is Physical standby
+create user /* CHG0205510 */ ABAGADE identified by FkwvduChmSlxM8mvmbb5#
+                             *
+ERROR at line 1:
+ORA-01920: user name 'ABAGADE' conflicts with another user or role name
+
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+MFE		USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+MCA01QA 	USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+EJC01PD 	USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+UXS01DV~6           :FAILURE:ORA-12514: TNS:listener does not currently know of service requested in connect                                         
+
+User created.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+Grant succeeded.
+
+
+IAS01DV 	USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+
+User altered.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+PRODQUOT	USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+
+User altered.
+
+
+MCA01UT 	USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+EJC01PD_LON6_01: Database is Physical standby
+
+User created.
+
+
+Grant succeeded.
+
+alter user ABAGADE profile ADMIN_USER
+*
+ERROR at line 1:
+ORA-02380: profile ADMIN_USER does not exist
+
+
+
+User created.
+
+
+Grant succeeded.
+
+
+UXS		USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+
+User altered.
+
+
+BMM01PD 	USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+
+User created.
+
+
+Grant succeeded.
+
+alter user ABAGADE profile ADMIN_USER
+*
+ERROR at line 1:
+ORA-02380: profile ADMIN_USER does not exist
+
+
+
+UXS		USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+QTS01LS: Database is Physical standby
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+IAS01PD 	USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+IAS01PD_LON6_01: Database is Physical standby
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+EJC01QA 	USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+EQT01LS_LNP6_01: Database is Physical standby
+BMM01PD_LON6: Database is Physical standby
+
+User created.
+
+
+Grant succeeded.
+
+EQT01PD_AMS5_01: Database is Physical standby
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+alter user ABAGADE profile ADMIN_USER
+*
+ERROR at line 1:
+ORA-02380: profile ADMIN_USER does not exist
+
+
+
+UXSLONPD	USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+
+MCA02DV 	USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+INF01QA 	USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+
+User created.
+
+
+Grant succeeded.
+
+MCA02LS_LNP6_01: Database is Physical standby
+
+User altered.
+
+
+BMM01QA 	USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+INFRADR: Database is Physical standby
+QTS01PD_NJ4_01: Database is Physical standby
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+EQT01PD 	USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+BRD01DV 	USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+INFRAPD 	USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+EQT01QA 	USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+
+User created.
+
+
+Grant succeeded.
+
+BRD01LS_LNP6_01: Database is Physical standby
+
+User altered.
+
+
+MCA02QA 	USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+UXSNY		USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+ITESPROD	USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+BRD01PD_AMS5_01: Database is Physical standby
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+ITESLON6: Database is Physical standby
+
+FVL01DV 	USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+FVL01LS_LNP6_01: Database is Physical standby
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+MCA02UT 	USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+BRD01PD_LON6_01~1   :FAILURE:ORA-12514: TNS:listener does not currently know of service requested in connect                                         
+UXSLNPD             :Connection:TIMEOUT 5 seconds: DB not  accesible/responding 5
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+PRODQUOT	USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+FVL01PD_NJ4_01: Database is Physical standby
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+BRD01QA 	USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+
+User created.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+User altered.
+
+
+QTS02QA 	USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+
+KYC02DV 	USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+BRD02QA 	USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+MCA67PD_LOV2_01     :Connection:TIMEOUT 5 seconds: DB not  accesible/responding 5
+rcatdr: Database is Physical standby
+
+User created.
+
+
+Grant succeeded.
+
+
+User created.
+
+
+User altered.
+
+
+Grant succeeded.
+
+
+MIM01PD 	USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+
+User altered.
+
+
+BVM01DV 	USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+UXSLONPD_LON6       :Connection:TIMEOUT 5 seconds: DB not  accesible/responding 5
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+RCATPD		USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+RDV		USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+MIM01PD_LON6: Database is Physical standby
+BVM01LS_LNP6_01: Database is Physical standby
+
+User created.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+User altered.
+
+MIM02PD_AMS5_01: Database is Physical standby
+
+User created.
+
+
+FVL01PD 	USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+KYC02QA 	USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+
+WHS01DV 	USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+WHS01LS_LNP6_01: Database is Physical standby
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+REFDEV		USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+
+User created.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+KYCPD		USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+
+User altered.
+
+
+EVBPROD 	USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+FVL01QA 	USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+
+User created.
+
+
+Grant succeeded.
+
+KYCPD_NJ4: Database is Physical standby
+
+User altered.
+
+
+PROD		USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+BVM01PD_LON6_01: Database is Physical standby
+
+MIM02PD 	USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+REFPROD 	USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+
+User created.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+GDV		USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+REF01PD_LON6_01: Database is Physical standby
+
+BRDPROD 	USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+WHS01PD_LON6_01: Database is Physical standby
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+BVM01QA 	USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+MRD76PD_FRV2_01: Database is Physical standby
+GIT01PD_AMS5_01: Database is Physical standby
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+BVM01QA 	USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+User created.
+
+
+WHS01QA 	USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+REFQA		USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+MSA01DV 	USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+
+User created.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+User altered.
+
+bvmls: Database is Physical standby
+
+User altered.
+
+
+KYCQA		USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+RHNSATDR: Database is Physical standby
+RHNSATPD: Database is Physical standby
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+WHS01UT 	USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+WHS02QA_LNP6_01~6   :FAILURE:ORA-12514: TNS:listener does not currently know of service requested in connect                                         
+MSA01LS_LNP6_01: Database is Physical standby
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+KYCUT		USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+CLR01LS_NJ4_01: Database is Physical standby
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+SSD		USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+STF01DV_NJ4~5       :FAILURE:ORA-12514: TNS:listener does not currently know of service requested in connect                                         
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+MSAPROD 	USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+CLR01PD_NJ4_01: Database is Physical standby
+MSA01PD_LON6_01: Database is Physical standby
+
+GIT01PD 	USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+MSA01QA 	USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+GIT12PD_FRV2_01: Database is Physical standby
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+NEWSDEV 	USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+LNS01DV_NJ4         :Connection:TIMEOUT 5 seconds: DB not  accesible/responding 5
+
+User created.
+
+
+Grant succeeded.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+User altered.
+
+
+GIT12PD 	USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+
+USSFPRD 	USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+STF01PD_RIC1_01: Database is Physical standby
+
+User created.
+
+
+Grant succeeded.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+User altered.
+
+
+NEWSPROD	USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+NWS01PD_LON6_01: Database is Physical standby
+
+CLEARPRD	USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+LNS01LS: Database is Physical standby
+GIT23PD_FRV2_01: Database is Physical standby
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+RHNSATPD	USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+NEWSQA		USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+GTS30LS_LNP6_01~2   :FAILURE:ORA-12154: TNS:could not resolve the connect identifier specified                                                       
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+CLR01QA 	USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+PDV		USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+GTX01DV 	USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+
+User created.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+User created.
+
+
+User altered.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+User altered.
+
+
+Grant succeeded.
+
+
+PRC01QA 	USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+
+User altered.
+
+
+STF01QA 	USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+
+LOANSPRO	USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+
+CLEARSIM	USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+
+User created.
+
+DCH01LS_LNP6_01: Database is Physical standby
+
+Grant succeeded.
+
+alter user ABAGADE profile ADMIN_USER
+*
+ERROR at line 1:
+ORA-02380: profile ADMIN_USER does not exist
+
+
+
+GTPROD		USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+STF02LS_NJ4_01: Database is Physical standby
+LNS01PD_RIC1_01: Database is Physical standby
+GTX01PD_LON6_01: Database is Physical standby
+DCH01LS_NJ4_01: Database is Physical standby
+DCH01PD_NJ4_01: Database is Physical standby
+LNS02DV_NJ4         :Connection:TIMEOUT 5 seconds: DB not  accesible/responding 5
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+LNS03QA 	USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+
+User created.
+
+
+Grant succeeded.
+
+
+User altered.
+
+
+MAPDEV		USER_STATUS FOUND :ABAGADE
+
+1 row selected.
+
+MAP01PD_NJ4_01: Database is Physical standby
+END Running  report end on : Thu Jan 28 02:54:50 GMT 2021
+Removing lock file
+ oinstall 0 Jan 28 02:53 /home/oracle/shivdeep/dbmon/script_log/adhoc_dba_script.lck

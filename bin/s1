@@ -1,0 +1,2 @@
+sshpass -p r3s0lv3d ssh oracle@$1
+

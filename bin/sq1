@@ -1,0 +1,125 @@
+#!/bin/ksh
+if [[ $# -eq 0 ]];then
+ echo Missing input
+exit
+fi
+
+if [[ $(get $1|wc -l) -eq 0 ]];then
+ echo DB is not setup
+ exit
+fi
+
+export TNS_ADMIN=/home/oracle/shivdeep/TNS_ADMIN
+function checkit
+{
+usr=$1
+password=$2
+db_name=$3
+unset SQLPATH
+unset ORACLE_PATH
+retmesg=`sqlplus -l -s ${usr}/${password}@${db_name} as sysdba <<!
+set head off feedback off
+select 'SUCCESS' from dual;
+!`
+echo $retmesg
+}
+
+function host_list
+{
+usr=$1
+password=$2
+db_name=$3
+unset SQLPATH
+unset ORACLE_PATH
+retmesg=`sqlplus -l -s ${usr}/${password}@${db_name} as sysdba <<!
+set head off feedback off
+select host_name from gv\\$instance order by 1;
+!`
+echo $retmesg
+}
+
+function get_service
+{
+usr=$1
+password=$2
+db_name=$3
+unset SQLPATH
+unset ORACLE_PATH
+retservice=`sqlplus -l -s ${usr}/${password}@${db_name} as sysdba <<!
+set head off feedback off trimspool on pages 0
+--select name from (select name,count(*) from gv\\$services where name not like 'SYS%' group by name order by count(*) desc) where rownum=1;
+select name from v\\$services where name in (upper('${db_name}'),upper('${db_name}')||'.markit.partners')
+/
+!`
+echo "$retservice"
+}
+
+set -A DBLIST `get $1`
+
+elemct=${#DBLIST[*]}
+echo elements:$elemct
+echo ${DBLIST[*]}
+let loopct=elemct-1
+for ii in $(seq 0 1 $loopct)
+do
+ let mic=$ii+1
+ echo -e "$mic. ${DBLIST[$ii]}"
+ this_db[$ii]=${DBLIST[$ii]}
+done
+echo -en "Select option:"
+read -n 1 option
+echo " "
+let db_option=option-1
+dbname=${this_db[$db_option]}
+#echo dbname: $dbname
+
+set -A set1 `grep -iw $dbname /home/oracle/shivdeep/dbmon/db_pass`
+db_name=${set1[0]};
+export TWO_TASK=${db_name}
+usr=${set1[1]};
+password=${set1[2]};
+#echo usr: $usr
+#echo sqlplus -l ${usr}/${password}@${db_name} as sysdba
+echo
+#echo ${password}
+echo
+if [[ $usr = 'sys' ]];then
+   #echo sqlplus -l ${usr}/${password}@${db_name} as sysdba
+   fretmesg=`checkit ${usr} ${password} ${db_name}`
+   if [[ $fretmesg = 'SUCCESS' ]];then
+      #get_service ${usr} ${password} ${db_name}
+      ser_name=`get_service ${usr} ${password} ${db_name}`
+      #echo ser_name : "$ser_name"
+      set -A fhost_list `host_list ${usr} ${password} ${db_name}`
+      elemct=${#fhost_list[*]}
+      #echo elements:$elemct
+      #echo ${fhost_list[*]}
+      let loopct=elemct-1
+      for ii in $(seq 0 1 $loopct)
+      do
+         let mic=$ii+1
+         echo -e "$mic. ${fhost_list[$ii]}"
+         this_host[$ii]=${fhost_list[$ii]}
+         arrayct=$ii
+      done       
+      let mic=mic+1
+      this_host[$arrayct+1]=exit
+      echo -e "$mic. exit"
+      echo -en "Select option:"
+      read -n 1 option
+      let host_option=option-1
+      hostnam=${this_host[$host_option]}
+      echo " "
+      #echo hostnam: $hostnam
+      if [[ $hostnam = 'exit' ]];then
+       exit
+      fi
+      export SQLPATH=/home/shivdeep.modi/sqlpath
+      echo  sqlplus -l ${usr}/${password}@${this_host[$host_option]}:1521/${ser_name} as sysdba
+      sqlplus -l ${usr}/${password}@${this_host[$host_option]}:1521/${ser_name} as sysdba
+   else
+      echo Connection failed
+   fi
+else
+   sqlplus -l ${usr}/${password}@${db_name}
+fi

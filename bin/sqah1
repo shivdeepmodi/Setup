@@ -1,0 +1,9 @@
+#!/bin/ksh
+unset ORACLE_PATH
+unset SQLPATH
+pasword=`/u01/app/oracle/dba_7.8/tools/pws/pw -u ASMSNMP -t ${1} -J sqah`
+#export ORACLE_PATH=/home/shivdeep.modi/sqlpath
+#export SQLPATH=/home/shivdeep.modi/sqlpath
+echo sqlplus -s ASMSNMP/${pasword}@${1}:1521/+ASM as sysdba
+export SQLPATH=/home/oracle/shivdeep/asmpath
+sqlplus ASMSNMP/${pasword}@${1}:1521/+ASM as sysdba @dummy.sql $1

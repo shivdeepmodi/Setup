@@ -1,0 +1,8 @@
+
+DB_NAME             |DATABASE_ROLE       |HOST_NAME           |TABLESPACE_NAME               |  COUNT(*)
+--------------------|--------------------|--------------------|------------------------------|----------
+BVM01PD_LON2_01     |PRIMARY             |lon2odcpdorc002a    |USERS                         |      1023
+
+1 row selected.
+
+Elapsed: 00:00:01.34

@@ -1,0 +1,8 @@
+<html >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<TITLE>Consolidated Flash Recovery Usage Report</TITLE>
+<STYLE type='text/css'>  <!-- BODY {background: #AEF7DC} -->  </STYLE>
+<p style="text-align:center;font-weight:bold">Flash Recovery Area Usage [Check for sum(PERCENT_SPACE_USED>70)]</p>
+</head>
+<body >

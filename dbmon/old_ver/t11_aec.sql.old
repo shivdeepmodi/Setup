@@ -1,0 +1,56 @@
+set lines 300 colsep '|'
+column db_unique_name new_value db_unique_name
+column host_name new_value host_name
+col DB_NAME for a20
+column host_name for a20
+column database_role new_value database_role
+set termout off timing on
+select value as db_unique_name  from v$parameter where name = 'db_unique_name';
+select decode(substr(min(host_name),1,instr(min(host_name),'.')-1),NULL,min(host_name),substr(min(host_name),1,instr(min(host_name),'.')-1)) host_name
+from gv$instance;
+select database_role from v$database;
+set termout on echo off verify off
+
+
+with
+free as
+(
+select /*+ materialze */ tbs.tablespace_name, sum(bytes) FREE_GB
+from dba_free_space free, dba_tablespaces tbs
+where tbs.tablespace_name=free.tablespace_name
+ and tbs.contents='PERMANENT'
+group by tbs.tablespace_name
+),
+used as
+(
+select /*+ materialze */ tbs.tablespace_name, sum(bytes) used
+from dba_segments used, dba_tablespaces tbs
+where tbs.tablespace_name=used.tablespace_name
+ and tbs.contents='PERMANENT'
+group by tbs.tablespace_name
+)
+select '&&db_unique_name' db_name,'&&database_role' database_role,'&&host_name' host_name,
+alloc.tablespace_name, round(alloc.total_gb/1048576/1024,2) total_gb,
+round(used.used/1048576/1024,2) USED_GB,
+round(alloc.total_gb/1048576/1024,2)-round(used.used/1048576/1024,2)+round(decode(FREE_GB,NULL,0,FREE_GB/1048576/1024),2) FREE_GB,
+round(used.used/alloc.total_gb*100,2) PCT_USED
+from
+(select tablespace_name, total_gb from (
+select tablespace_name,round(sum(total_gb),2) total_gb from
+(
+select tbs.tablespace_name,sum(d.bytes) total_gb
+from dba_data_files d, dba_tablespaces tbs where autoextensible='NO' and d.tablespace_name=tbs.tablespace_name and tbs.contents='PERMANENT'
+group by tbs.tablespace_name
+union all
+select tbs.tablespace_name,sum(maxbytes) as total_gb from dba_data_files d, dba_tablespaces tbs  where autoextensible='YES'  and d.tablespace_name=tbs.tablespace_name and tbs.contents='PERMANENT'
+group by tbs.tablespace_name
+)
+group by tablespace_name
+)) alloc,
+used,
+free
+where alloc.tablespace_name=free.tablespace_name(+)
+  and used.tablespace_name=alloc.tablespace_name
+  --and round(used.used/alloc.total_gb*100,2) >90
+  ----and round(alloc.total_gb/1048576/1024,2)-round(used.used/1048576/1024,2)+round(decode(FREE_GB,NULL,0,FREE_GB/1048576/1024),2) <200
+  order by 8 desc;

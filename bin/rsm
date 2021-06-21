@@ -1,0 +1,81 @@
+#!/bin/ksh
+unset SQLPATH
+unset ORACLE_PATH
+cd /home/oracle/shivdeep/sql
+#
+while true
+do
+echo -e " 1. Main  : InProgress"
+echo -e " 2. Main  : Completed"
+echo -e " 3. Main  : All"
+echo -e " 4. Sub   : InProgress"
+echo -e " 5. Sub   : Completed"
+echo -e " 6. Sub   : All"
+echo -e " 7. Daily : InProgress"
+echo -e " 8. Daily : Completed"
+echo -e " 9. Daily : All"
+echo -e " 0. exit"
+#
+echo -en "Select option:"
+read -n 1 option
+set -A title "Main : InProgress" "Main  : Completed" "Main  : All" "Sub   : InProgress" "Sub   : Completed" "Sub   : All" "Daily : InProgress" "Daily : Completed" "Daily : All"
+let aoption=option-1
+echo " "
+#clear
+if [[ $option -eq 0 ]];then
+ echo Exit..
+else
+ echo ==========================================================================================================================================
+ echo Reporting ${title[$aoption]}
+ echo ==========================================================================================================================================
+fi
+case $option in 
+ 1) sm1 repmain_open.sql
+    echo " "
+    echo "Continue... "
+    read zxc
+    ;;
+ 2) sm1 repmain_close.sql
+    echo " "
+    echo "Continue... "
+    read zxc
+    ;;
+ 3) sm1 repmain_all.sql
+    echo " "
+    echo "Continue... "
+    read zxc
+    ;;
+ 4) sm1 repsub_open.sql
+    echo " "
+    echo "Continue... "
+    read zxc
+    ;;
+ 5) sm1 repsub_close.sql
+    echo " "
+    echo "Continue... "
+    read zxc
+    ;;
+ 6) sm1 repsub_all.sql
+    echo " "
+    echo "Continue... "
+    read zxc
+    ;;
+ 7) sm1 repdaily_open.sql
+    echo " "
+    echo "Continue... "
+    read zxc
+    ;;
+ 8) sm1 repdaily_close.sql
+    echo " "
+    echo "Continue... "
+    read zxc
+    ;;
+ 9) sm1 repdaily_all.sql
+    echo " "
+    echo "Continue... "
+    read zxc
+    ;;
+ 0) break;
+    ;;
+esac
+done

@@ -1,0 +1,9 @@
+<table border=1 width=100%>
+<tr>
+<td>DB_NAME      </td>
+<td>DATABASE_ROLE      </td>
+<td>HOST_NAME      </td>
+<td>NAME      </td>
+<td>TIME         </td>
+<td>GUARANTEE</td>
+</tr>

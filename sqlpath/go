@@ -1,0 +1,12 @@
+echo "alias pmon='ps -ef|grep pmon'"
+#set -o vi
+echo "HOST=`hostname`"
+echo "alias l='ls -lrt'"
+echo "alias d='du -hs * 2>/dev/null'"
+echo "alias tns='ps -ef|grep tns'"
+echo "alias oh='echo $ORACLE_HOME;cd $ORACLE_HOME';"
+echo "alias pmon='ps -ef|grep pmon'"
+echo "alias sq='sqlplus / as sysdba'"
+echo 'alias oh="cd \$ORACLE_HOME"'
+echo 'export PS1="${HOST%%.*}:\${PWD} [\${ORACLE_SID:-NO_DB}] > "'
+echo "export SQLPATH=~shivdeep.modi/sqlpath"

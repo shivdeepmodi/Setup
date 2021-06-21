@@ -1,0 +1,41 @@
+#!/bin/ksh
+# kycpd_lon6 	PRIMARY	lon6cobpdorc001a 	KYC_DATA 
+
+DB=$1
+TBS=$4
+#tempfile in temp_work dir
+#suffix option does not work
+tempfile=`mktemp -p /home/oracle/shivdeep/temp_work`
+if [[ $? -ne 0 ]];then
+ echo Unable to generate the tempfile
+else
+mv ${tempfile} ${tempfile}.sql
+cp ${tempfile}.sql ${tempfile}.sout.sql
+#ls -l ${tempfile}.sql
+#rm ${tempfile}.sql
+# Don't output on the screen
+sqls $1 <<! > /dev/null
+set lines 300 
+spool ${tempfile}.sout.sql
+@$SPATH/t $4
+spool off
+!
+grep -v alter ${tempfile}.sout.sql
+echo ' '
+grep alter ${tempfile}.sout.sql >> ${tempfile}.sql
+
+PS3="${DB}: Add datafile in tbs ${TBS}. Enter 1(Yes) or 2(No) : "
+select thisOption in Y N 
+do
+    #case $REPLY in
+    case $thisOption in
+        Y ) grep alter ${tempfile}.sql 
+            cat ${tempfile}.sql|sqls $DB ;;
+        N ) echo -e "${DB}: Datafile addition skipped \n";break;;
+        * ) echo 'Incorrect Input.' ;;
+    esac
+done
+
+fi
+#cat ${tempfile}.sql
+rm ${tempfile}.sql ${tempfile}.sout.sql

@@ -1,0 +1,6 @@
+ERROR:
+ORA-12520: TNS:listener could not find available handler for requested type of
+server
+
+
+SP2-0751: Unable to connect to Oracle.  Exiting SQL*Plus

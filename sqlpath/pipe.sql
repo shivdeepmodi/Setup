@@ -1,0 +1,1 @@
+select * from v$db_pipes;

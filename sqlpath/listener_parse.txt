@@ -1,0 +1,8 @@
+BEGIN {count=0; old_value="" ; value=""}
+/^[0-9].*establish*/ {
+value=substr($0,1,14);
+# 17 for every minute, 14 for every hour
+if ( old_value != value ) {print old_value, count ; count=1; old_value=value } else { count++ } ;
+#if ( $old_value != $value ) print value ;
+}
+END {print value, count}

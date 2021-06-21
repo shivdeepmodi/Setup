@@ -1,0 +1,21 @@
+#!/bin/ksh
+DB=$1
+file1=`sys $DB|grep ^\+`
+
+d1=`dirname $file1`
+syspass1=`gs $DB|awk '{print$3}'`
+
+tnsping $1
+
+echo Password file is : $file1
+echo ASM Directory is : $d1
+echo SYSPASS is : $syspass1
+echo
+
+echo asmcmd \<\< \!
+echo mkdir $d1
+echo \!
+
+echo setenv for $1
+echo orapwd file=\'$file1\' password=$syspass1 dbuniquename=$1
+

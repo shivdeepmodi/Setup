@@ -1,0 +1,66 @@
+# Redo logs in database
+col member for a70
+col status for a10
+
+select i.instance_name,l.group#,l.thread#,f.member,l.archived,l.status,f.type,l.first_time
+  from gv$log l, gv$logfile f, gv$instance i
+ where l.group# = f.group#
+   and l.inst_id = f.inst_id
+   and i.inst_id = l.inst_id
+   and l.inst_id = l.thread#
+ order by i.instance_name,substr(f.member,1,16),l.thread#,l.group#;
+ 
+ 
+ select i.instance_name,l.group#,l.sequence#,l.thread#,f.member,l.archived,l.bytes/1078576 bytes,l.status,f.type, l.first_time
+  from gv$standby_log l, gv$logfile f, gv$instance i
+ where l.group# = f.group#
+   and l.inst_id = f.inst_id
+   and i.inst_id = l.inst_id
+   and l.inst_id = l.thread#
+ order by i.instance_name,substr(f.member,1,16),l.thread#,l.group#;
+ 
+ +HST01PD_CTLLOG1/HST01PD_LON6_01/ONLINELOG
+
+# Redo Logs on disk
+asmcmd <<! |grep group|awk '{print$8}' > dg1
+cd +HST01PD_CTLLOG1/HST01PD_LON6_01/ONLINELOG
+ls -l
+!
+
+asmcmd <<! |grep group|awk '{print$8}' > dg2
+cd +HST01PD_CTLLOG2/HST01PD_LON6_01/ONLINELOG
+ls -l
+!
+
+# For all redo logs in disk check if that exists in the database
+counter=0
+for ii in $(cat dg1); 
+do 
+grep $ii vg1 >/dev/null
+if [[ $? -eq 0 ]];then
+#echo $ii is found. Redo log is in use
+let counter=counter+1
+else 
+#echo $ii is not found. This is orphan
+echo rm $ii
+fi
+done
+echo total files: $counter
+
+
+
+# For all redo logs in disk check if that exists in the database
+counter=0
+for ii in $(cat dg2); 
+do 
+grep $ii vg2 >/dev/null
+if [[ $? -eq 0 ]];then
+#echo $ii is found. Redo log is in use
+let counter=counter+1
+else 
+#echo $ii is not found. This is orphan
+echo rm $ii
+:
+fi
+done
+echo total files: $counter

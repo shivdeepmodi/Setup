@@ -1,0 +1,8 @@
+				 from V$RMAN_BACKUP_JOB_DETAILS
+				      *
+ERROR at line 20:
+ORA-00604: error occurred at recursive SQL level 2 
+ORA-00904: "SYS"."DBMS_RCVMAN"."NUM2DISPLAYSIZE": invalid identifier 
+
+
+Elapsed: 00:00:00.21

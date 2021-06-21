@@ -1,0 +1,67 @@
+#!/bin/ksh
+
+unset SQLPATH
+sqls $1 <<!
+set head off trimspool on feed off pages 0
+col host_name for a40
+col instance_name for a20
+spool /home/oracle/shivdeep/temp_work/inst_info.txt replace
+select host_name,instance_name from gv\$instance order by host_name;
+spool off
+!
+echo " "
+echo Get ORACLE_HOME
+ORA_HOME_OUT=`sqls $1 <<!
+set head off feedback off
+select SYS_CONTEXT ('USERENV','ORACLE_HOME') oracle_home from dual;
+!`
+
+echo ORA_HOME_OUT: ">"$ORA_HOME_OUT"<"
+
+ORA_HOME=`echo $ORA_HOME_OUT|awk '{print$1}'`
+echo ORA_HOME:">"$ORA_HOME"<"
+
+echo " "
+
+set -A host_list `awk '{print$1}' /home/oracle/shivdeep/temp_work/inst_info.txt`
+set -A inst_list `awk '{print$2}' /home/oracle/shivdeep/temp_work/inst_info.txt` 
+passwd=`gs $1|awk '{print$3}'`
+#echo echo ${host_list[*]}
+#echo echo ${inst_list[*]}
+
+echo -n "Enter Clustername: "
+read cluster_name 
+
+elemct=${#host_list[*]}
+let loopct=elemct-1
+
+for ii in $(seq 0 1 $loopct)
+do
+  let mic=$ii+1
+  this_host[$ii]=${host_list[$ii]}
+  this_inst[$ii]=${inst_list[$ii]}
+  
+  let inst_num=$ii+1
+
+echo \# Add instance $inst_num
+  echo "emcli add_target -name=${1}.markit.partners_${this_inst[$ii]} -type=oracle_database -host=\"${this_host[$ii]}\" -credentials=\"UserName:SYS;password:${passwd};Role:SYSDBA\" \\
+-properties=\"SID:${this_inst[$ii]};Port:1521;OracleHome:${ORA_HOME};MachineName:${this_host[$ii]}\""
+
+  if [[ ${inst_num} -eq 1 ]];then
+    instances_list=${1}.markit.partners_${this_inst[$ii]}:oracle_database
+    first_host=${this_host[$ii]}
+  else
+    instances_list="${instances_list};${1}.markit.partners_${this_inst[$ii]}:oracle_database"
+  fi 
+  echo " "
+
+
+done
+
+echo \# Add RAC Database
+echo "emcli add_target -name=\"${1}.markit.partners\" -type=\"rac_database\" -host=\"${first_host}\" -monitor_mode=\"1\" \\
+-properties=\"ServiceName:${1}.markit.partners;ClusterName:${cluster_name}\" -instances=\"${instances_list}\""
+
+echo " "
+echo " "
+echo " "

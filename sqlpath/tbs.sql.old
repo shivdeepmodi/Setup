@@ -1,0 +1,94 @@
+REM Tablespace report for a single tablespace
+REM User input required.
+
+set termout off feedback off verify off
+
+/* Column bigfile new_value bigfile heading 'Bigfile' format a7
+
+select case count(*)
+       when 1 then 'bigfile'
+       else ''''||'N.A.'||''''
+        end bigfile
+  from dba_tab_columns
+ where table_name = 'DBA_TABLESPACES' 
+   and column_name = 'BIGFILE';
+*/ 
+set termout on feedback on
+
+--Accept tablespace_name char prompt 'Give tablespace name :'
+define tablespace_name=&1
+
+Ttitle left "Tablespace report for a single tablespace &&tablespace_name"  skip 2
+
+Column tablespace_name          heading 'Tablespace'           format a10
+Column contents                 heading 'Contents'             format a9
+Column status                   heading 'Status'               format a7
+column extent_management        heading 'Extent|Management'    format a10
+column segment_space_management heading 'Segment|Space|Mgt'    format a7
+column allocation_type          heading 'Alloc|Type'           format a7
+Column allocated_space          heading 'Allocated|Space|(MB)' format 9999999999
+Column used_space               heading 'Used Space|(MB)'      format 9999999999
+Column used_pct                 heading 'Used(%)'              format 999.9
+Column free_space               heading 'Free Space|(MB)'      format 9999999999
+Column free_pct                 heading 'Free(%)'              format 999.9
+Column maxposs                  heading 'Max Possible|Extent|(MB)' format 9999999
+
+select tbs.tablespace_name,tbs.status,tbs.contents,tbs.extent_management,tbs.segment_space_management,tbs.allocation_type,tbs.bigfile,
+       dat.allocated_space,
+       dat.allocated_space - free.free_space used_space,
+       round((dat.allocated_space - free.free_space)/dat.allocated_space*100,2) used_pct,
+       free.free_space free_space,
+       round(free.free_space/dat.allocated_space*100,2) free_pct,
+       free.maxposs
+from   (
+         select tablespace_name, contents, status,bigfile,extent_management,segment_space_management,allocation_type
+           from dba_tablespaces
+           where tablespace_name = upper('&&tablespace_name')
+       ) tbs,
+       (
+         select tablespace_name, sum(bytes)/power(1024,3) allocated_space
+           from dba_data_files
+          where tablespace_name = upper('&&tablespace_name')
+          group by tablespace_name
+       ) dat,
+       (
+         select tbs.tablespace_name, nvl(sum(bytes)/power(1024,3),0) free_space, round(nvl(max(bytes)/1048576,0),0) maxposs
+           from dba_free_space free, dba_tablespaces tbs
+          where tbs.tablespace_name = upper('&&tablespace_name')
+            and tbs.tablespace_name = free.tablespace_name(+)
+          group by tbs.tablespace_name
+       ) free
+ where tbs.tablespace_name = dat.tablespace_name
+   and dat.tablespace_name = free.tablespace_name
+ union 
+select tbs.tablespace_name,tbs.status,tbs.contents,tbs.extent_management,tbs.segment_space_management,tbs.allocation_type,tbs.bigfile,
+       temp.allocated_space,
+       v.used_space,
+       round(v.used_space/temp.allocated_space*100,0) used_pct,
+       v.free_space,
+       round(v.free_space/temp.allocated_space*100,0) free_pct,
+       v.maxposs
+  from (
+         select tablespace_name,contents,status,bigfile bigfile,extent_management,segment_space_management,allocation_type
+           from dba_tablespaces
+          where tablespace_name = upper('&&tablespace_name')
+       ) tbs,
+       (
+         select tablespace_name,sum(bytes)/power(1024,3) allocated_space
+           from dba_temp_files
+          where tablespace_name = upper('&&tablespace_name')
+          group by tablespace_name
+       ) temp,
+       (
+         select tablespace_name,sum(bytes_used)/power(1024,3) used_space, 
+                sum(bytes_free)/power(1024,3) free_space, sum(bytes_free)/power(1024,3) maxposs
+           from v$temp_space_header
+          where tablespace_name = upper('&&tablespace_name')
+          group by tablespace_name
+       ) v
+ where tbs.tablespace_name = temp.tablespace_name
+   and temp.tablespace_name = v.tablespace_name
+/
+Ttitle off
+--clear columns
+set verify on

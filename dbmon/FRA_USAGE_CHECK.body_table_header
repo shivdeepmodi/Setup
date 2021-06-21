@@ -1,0 +1,11 @@
+<table border=1 width=100%>
+<tr>
+<td>DB_NAME      </td>
+<td>DATABASE_ROLE      </td>
+<td>HOST_NAME      </td>
+<!-- <td>FILE_TYPE         </td> -->
+<td>PERCENT_SPACE_USED</td> 
+<td>PERCENT_SPACE_RECLAIMABLE </td>
+<!-- <td>NUMBER_OF_FILES</td> -->
+<!-- <td>CON_ID</td> -->
+</tr>

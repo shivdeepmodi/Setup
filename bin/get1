@@ -1,0 +1,3 @@
+grep '\- P' 1|cut -c 18-50 > ${1}.tmp
+mkots ${1}.tmp 
+cat ots1.sql

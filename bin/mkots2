@@ -1,0 +1,7 @@
+echo 'set timing off termout off echo off head off feed off verify off' > ots1.sql
+echo 'spool ots1.log' >>  ots1.sql
+grep - $1|cut -d "-" -f3|sed '/^$/d'| sed 's!^!@ots !g' >> ots1.sql
+echo 'spool off' >> ots1.sql
+echo 'host sort -k1 ots1.log|egrep -v selected|sed '/^$/d' ' >> ots1.sql
+echo 'set termout on echo on feed on verify on' >> ots1.sql
+cat ots1.sql

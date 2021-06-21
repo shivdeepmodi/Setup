@@ -1,0 +1,119 @@
+#!/bin/ksh
+export SQLPATH=/home/shivdeep.modi/sqlpath
+export ORACLE_PATH=$SQLPATH
+thisscript=`echo $0`
+if [[ $# -eq 0 ]];then
+  echo Missing input
+  exit
+fi
+
+if [[ $(get $1|wc -l) -eq 0 ]];then
+  echo DB is not setup
+  exit
+fi
+
+if [[ `get $1|wc -l` -eq 1 ]];then
+ dbname=$1
+else
+set -A DBLIST `get $1`
+
+elemct=${#DBLIST[*]}
+echo elements:$elemct
+echo ${DBLIST[*]}
+let loopct=elemct-1
+for ii in $(seq 0 1 $loopct)
+do
+  let mic=$ii+1
+  echo -e "$mic. ${DBLIST[$ii]}"
+  this_db[$ii]=${DBLIST[$ii]}
+  arrayct=$ii
+done
+let mic=mic+1
+this_db[$arrayct+1]=exit
+echo -e "$mic. exit"
+
+echo -en "Select option:"
+read -n 1 option
+let db_option=option-1
+dbname=${this_db[$db_option]}
+echo " "
+if [[ $dbname = 'exit' ]];then
+ exit
+fi
+
+#echo dbname: $dbname
+
+fi
+echo " "
+
+export TNS_ADMIN=/home/oracle/shivdeep/TNS_ADMIN
+grep -wi $dbname /home/oracle/shivdeep/dbmon/db_pass|grep -v ^\# > /dev/null
+if [[ $? -ne 0 ]];then
+echo
+ echo $dbname is not setup.. 
+echo
+else
+
+ grep -wi ^${dbname} /home/oracle/shivdeep/TNS_ADMIN/tnsnames.ora > /dev/null
+ if [[ $? -ne 0 ]]; then
+   echo $dbname is missing in tns
+ else
+db_uniq_nam=`sqls $dbname <<!
+set head off trimspool on pages 0
+select value from v\\$parameter where name = 'db_unique_name';
+!`
+
+db_uniq_nam=`echo $db_uniq_nam|awk '{print$1}'`
+
+host=`sqls $dbname <<!
+set head off trimspool on pages 0
+select min(host_name) from gv\\$instance;
+!`
+host=`echo $host|sed 's!.markit.partners!!g'`
+#echo host: $host
+
+unset ORACLE_PATH
+unset SQLPATH
+pasword=`/u01/app/oracle/dba_7.8/tools/pws/pw -u MARKITMON -t ${host} -J ${thisscript}`
+#echo sqlplus -s -l markitmon/${pasword}@${host}:1521/+ASM as sysdba
+sqlplus -s -l markitmon/${pasword}@${host}:1521/+ASM as sysdba <<!
+col db_name for a20
+set verify off colsep '|' timing off feedback off lines 300
+select '$db_uniq_nam' DB_NAME,diskgroup,TOTAL_GB,FREE_GB,PCT_FREE,PCT_USED
+ from (
+SELECT
+   (CASE
+        WHEN (total_mb/1024) >= 2000 AND (free_mb/1024) < 2000 THEN 'CRITICAL'
+                WHEN (total_mb/1024) < 2000 AND (free_mb/total_mb*100) < 10 THEN 'CRITICAL'
+                WHEN (free_mb/total_mb*100) between 10 and 20 THEN 'WARNING'
+        ELSE 'N/A'
+   END) Alert
+,  S.NAME diskgroup
+,  round(S.TOTAL_MB/1024,2) TOTAL_GB
+,  round(S.FREE_MB/1024,2) FREE_GB
+,  ROUND(S.free_mb/S.total_mb*100, 2) pct_free
+,  ROUND((1-S.free_mb/S.total_mb)*100, 2) pct_used
+,  S.STATE
+,  S.OFFLINE_DISKS
+,v.usage
+from
+  v\$ASM_DISKGROUP_STAT S, V\$ASM_VOLUME V
+where s.group_number = v.group_number(+)
+  and s.name in (select a.name from v\$asm_diskgroup_stat a, v\$asm_client b where a.group_number = b.group_number and b.db_name = substr('$db_uniq_nam',1,8))
+)
+where usage is null ;
+
+set pages 100
+col attribute_name for a40
+col attribute_name for a40
+col value for a20
+break on name skip 1
+select ad.name, aa.name attribute_name, aa.value
+ from v\$asm_attribute aa, v\$asm_diskgroup_stat ad
+where aa.name like 'compatible%'
+  and aa.group_number=ad.group_number
+  and ad.name in (select a.name from v\$asm_diskgroup_stat a, v\$asm_client b where a.group_number = b.group_number and b.db_name = substr('$db_uniq_nam',1,8))
+order by 1,2;
+!
+ fi
+fi

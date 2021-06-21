@@ -1,0 +1,10 @@
+#!/bin/ksh
+unset SQLPATH
+set -A set1 `grep $1 /home/oracle/shivdeep/dbmon/db_pass`
+db_name=${set1[0]};
+usr=${set1[1]};
+password=${set1[2]};
+sqlplus -l -s ${usr}/${password}@${db_name} as sysdba <<! 2>/dev/null |sed '/^$/d'
+set feedback off head off trimspool on 
+select value from v\$parameter where name = 'db_unique_name';
+!

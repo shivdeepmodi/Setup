@@ -1,0 +1,11 @@
+while true
+do
+date
+
+echo =================================
+ps -ef|egrep 'wrap|report|daily|[s]qlplus -s -l'|egrep -v 'vi|grep|tail'|grep oracle
+echo =================================
+sleep 5
+echo " "
+echo " "
+done

@@ -1,0 +1,56 @@
+Objects locked by Library Cache based on sessions detected above
+
+select SESSION_ID sid ,
+substr(LOCK_TYPE,1,30) Type,
+substr(lock_id1,1,23) Object_Name,
+substr(mode_held,1,4) HELD, substr(mode_requested,1,4) REQ,
+lock_id2 Lock_addr
+from dba_lock_internal
+where
+mode_requested<>'None'
+and mode_requested<>mode_held
+and session_id in ( select sid
+from v$session_wait where wait_time=0
+and event like '%library cache%') ;
+
+
+Objects waiting for Library Cache lock
+
+col type for a20
+set linesize 150
+set pagesize 80
+col OBJECT_NAME for a20
+col LOCK_ADDR for a20
+
+select SESSION_ID sid ,
+substr(LOCK_TYPE,1,30) Type,
+substr(lock_id1,1,23) Object_Name,
+substr(mode_held,1,4) HELD, substr(mode_requested,1,4) REQ,
+lock_id2 Lock_addr
+from dba_lock_internal
+where
+mode_requested<>'None'
+and mode_requested<>mode_held
+and session_id in ( select sid
+from gv$session_wait where wait_time=0
+and event like 'library cache%') ;
+
+What are the holders waiting for?
+
+select sid,substr(event,1,30) event,wait_time
+from v$session_wait
+where sid in (select sid from x$kglpn , v$session
+where KGLPNHDL in (select p1raw from v$session_wait
+where wait_time=0 and event like 'library cache%')
+and KGLPNMOD <> 0
+and v$session.saddr=x$kglpn.kglpnuse );
+
+
+  SID  OBJECT_NAME                        
+-----  -----------------------------------
+ 1440  CORE.HOLIDAYS_Q                    
+  495  CORE.HOLIDAYS_Q                    
+ 1683  CORE.HOLIDAYS_Q                    
+  381  CORE.HOLIDAYS_Q                    
+ 1556  CORE.HOLIDAYS_Q                    
+  969  CORE.HOLIDAYS_Q                    
